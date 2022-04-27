@@ -129,6 +129,8 @@ export const TopContainer = styled.div``
 
 export const BottomContainer = styled.h1`
 font-size: 70px;
+font-weight: 700;
+
 `
 
 export const BottomMiddleContainer = styled.div`
@@ -138,6 +140,8 @@ margin-bottom: 36px;
 display: flex;
 align-items: right;
 background-color: green;
+position: relative;
+
 `
 
 export const DownloadCV = styled.a`
@@ -147,7 +151,9 @@ background-color: none;
 border: 1px solid white;
 padding: 10px 15px;
 text-decoration: none;
-position: right;
+position: absolute;
+right: 0;
+bottom: 5px;
 
 
 `
