@@ -47,11 +47,17 @@ export const HamContainer = styled.div`
   align-items: center;
   cursor: pointer;
 
-  img {
-    display: block;
-    width: 100%;
-  }
 `;
+
+export const CloseHam = styled.img`
+display: none;
+width: 80%;
+filter: invert(100%) sepia(0%) saturate(7433%) hue-rotate(231deg) brightness(107%) contrast(100%);
+`
+export const OpenHam = styled.img`
+display: block;
+width: 100%;
+`
 
 export const TextContainer = styled.div`
   width: 85%;

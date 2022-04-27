@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useContext} from "react";
 import { List, NavbarContainer, UnorderedList } from "./NavbarStyled";
+import PortfolioContext from "../../context/portfolioContext";
 
 const Navbar = () => {
+    const portfolioContext = useContext(PortfolioContext);
+    const { ulDisplay } = portfolioContext;
   return (
-    <NavbarContainer>
+    <NavbarContainer style={ulDisplay()}>
       <UnorderedList>
         <List>HOME</List>
         <List>PROJECTS</List>

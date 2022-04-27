@@ -24,6 +24,8 @@ color:  #5390d9;
 list-style: none;
 font-size: 50px;
 font-weight: 800;
+cursor: pointer;
+margin-bottom: 5px;
 `
 
 
