@@ -7,6 +7,7 @@ export const HomeContainer = styled.div`
   height: 100vh;
   width: 100%;
   justify-content: space-between;
+  position: relative;
 `;
 
 //LeftContainer
@@ -194,6 +195,10 @@ export const Icon = styled(FontAwesomeIcon)`
   color: #386cab;
   font-size: 30px;
   cursor: pointer;
+  transition: 300ms ease-in;
+  &:hover {
+  color: #5390d9;
+  }
 `;
 
 export const EmptyRightDiv = styled.div`
@@ -206,14 +211,10 @@ export const EmptyRightDiv = styled.div`
   background-color: none;
   border: 1px solid #386cab;
   padding: 10px 15px;
-
   display: flex;
   position: absolute;
   left: 0;
   bottom: 5px;
-
-  
-
  
 `;
 
@@ -263,6 +264,5 @@ export const BottomRightContainer = styled.div`
   margin: 0px auto;
   display: flex;
   align-items: right;
-  background-color: green;
   position: relative;
 `;

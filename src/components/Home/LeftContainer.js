@@ -12,21 +12,14 @@ import {
   LanguageDiv,
   Bottom,
 } from "./Homestyling";
-import logo from "./../../assets/logonew.svg";
-import HamOpen from "../../assets/icons/ham-open.svg";
+
 import flag from "../../assets/icons/usaflag.png";
+import NavLogo from "../Shared/NavLogo";
 
 const LeftContainer = () => {
   return (
     <LeftContainerDiv>
-      <LogoHamContainer>
-        <LogoContainer>
-          <img src={logo} alt="logo" />
-        </LogoContainer>
-        <HamContainer>
-          <img src={HamOpen} alt="openMenu" />
-        </HamContainer>
-      </LogoHamContainer>
+      <NavLogo />
       <Bottom>
       <TextContainer>
         <MyName>
