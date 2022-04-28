@@ -24,3 +24,14 @@ export const RightContainer = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
+
+export const ProjectDetails = styled.div``
+
+export const ProjectName = styled.h2``
+
+export const ProjectDescription = styled.p``
+
+export const TechnologyUsed = styled.div``
+
+export const Tech = styled.p``
