@@ -1,8 +1,14 @@
 import React from 'react'
+import { ContactContainer } from './ContactStyling'
+import LeftContact from './LeftContact'
+import RightContact from './RightContact'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <ContactContainer>
+      <LeftContact />
+      <RightContact />
+    </ContactContainer>
   )
 }
 
