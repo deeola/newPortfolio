@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import LeftProject from "./LeftProject";
+import RightProject from "./RightProject";
+import {
+ 
+  ProjectContainer,
+ 
+} from "./ProjectStyling";
 
 const Project = () => {
   return (
-    <div>Project</div>
-  )
-}
+    <ProjectContainer>
+      <LeftProject />
+      <RightProject />
+    </ProjectContainer>
+  );
+};
 
 export default Project;
+
