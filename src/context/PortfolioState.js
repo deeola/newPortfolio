@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import portfolioContext from "./portfolioContext";
+import AllProjects from "../components/Project/Allprojects";
 
 const PortfolioState = (props) => {
 // Navigation
@@ -48,6 +49,27 @@ function SubmitSignUp() {
   setSignuptrue(true);
 }
 
+
+//caurosel
+
+let [currents, setCurrent] = useState(0);
+
+  const setProjectNext = () => {
+    if (currents >= AllProjects.length - 1) {
+      setCurrent(0);
+    } else {
+      setCurrent(currents + 1);
+    }
+  };
+
+  function setProjectPrev() {
+    if (currents <= 0) {
+      setCurrent(AllProjects.length - 1);
+    } else {
+      setCurrent(currents - 1);
+    }
+  }
+
     //RETURN
   return (
     <portfolioContext.Provider
@@ -62,6 +84,9 @@ function SubmitSignUp() {
         hamOpen,
         signuptrue,
         SubmitSignUp,
+        currents,
+        setProjectNext,
+        setProjectPrev
       }}
     >
       {props.children}

@@ -35,3 +35,10 @@ export const ProjectDescription = styled.p``
 export const TechnologyUsed = styled.div``
 
 export const Tech = styled.p``
+
+
+export const Visit = styled.div``
+
+export const Site = styled.a``
+
+
