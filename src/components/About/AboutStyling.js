@@ -67,3 +67,22 @@ export const RightContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 `;
+
+export const TextManagementWrapper = styled.div``
+
+export const TextWrapper = styled.p``
+
+export const Management = styled.div``
+
+
+export const ToolsTitle = styled.h5``
+
+
+export const ToolsWrapper = styled.div``
+
+export const Tools = styled.div``
+
+
+export const Tool = styled.p``
+
+export const OpenSource = styled.a``
