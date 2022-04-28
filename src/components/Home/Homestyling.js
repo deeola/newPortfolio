@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 //Home
 export const HomeContainer = styled.div`
@@ -130,9 +131,9 @@ export const BottomContainer = styled.h1`
   color:  #5390d9;
 `;
 
-export const MiddleContainerDiv = styled.div`
+export const MiddleContainerDiv = styled(Link)`
   width: 33.3333333333%;
-
+  text-decoration: none; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -188,6 +189,7 @@ export const DownloadCV = styled.a`
   right: 0;
   bottom: 5px;
   transition: 300ms ease-in;
+  z-index:2;
 
   &:hover {
     background-color:  #386cab;
@@ -226,13 +228,14 @@ export const EmptyRightDiv = styled.div`
 
 
 
-export const RightContainerDiv = styled.div`
+export const RightContainerDiv = styled(Link)`
   width: 33.3333333333%;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  text-decoration: none;
 
   cursor: pointer;
   transition: 300ms ease-in;

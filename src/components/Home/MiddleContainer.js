@@ -11,7 +11,7 @@ import {
 
 const MiddleContainer = () => {
   return (
-    <MiddleContainerDiv>
+    <MiddleContainerDiv to='projects'>
       <ProjectContainer>
         <TopContainer>
           <EmptyDiv />

@@ -18,7 +18,7 @@ library.add(fab);
 
 const RightContainer = () => {
   return (
-    <RightContainerDiv>
+    <RightContainerDiv to='/about'>
       <ProjectContainer>
         <TopContainer>
           <EmptyDiv />

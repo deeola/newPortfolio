@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <HomeContainer>
         <LeftContainer />
-        <MiddleContainer />
-        <RightContainer />
+        <MiddleContainer  />
+        <RightContainer  />
     </HomeContainer>
   )
 }
