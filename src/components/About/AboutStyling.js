@@ -61,28 +61,62 @@ color: white;
 
 export const RightContainer = styled.div`
   width: 66.6666666666%;
-  background-color: grey;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
 `;
 
-export const TextManagementWrapper = styled.div``
+export const TextManagementWrapper = styled.div`
+width: 70%; 
 
-export const TextWrapper = styled.p``
+`
+
+export const TextWrapper = styled.p`
+
+color:  #5390d9;
+line-height: 23px;
+margin: 10px 0px; 
+`
 
 export const Management = styled.div``
 
 
-export const ToolsTitle = styled.h5``
+export const ToolsTitle = styled.h5`
+margin: 20px 0px;
+color: #293241;
+`
 
 
-export const ToolsWrapper = styled.div``
-
-export const Tools = styled.div``
+export const ToolsWrapper = styled.div`
 
 
-export const Tool = styled.p``
 
-export const OpenSource = styled.a``
+margin: 30px 0px;
+`
+
+export const Tools = styled.div`
+
+display: flex;
+justify-content: space-between;
+margin: 10px 0px;
+`
+
+
+export const Tool = styled.p`
+color: #5390d9;
+  background-color: none;
+  border: 1px solid #5390d9 ;
+  padding: 15px 15px;
+  transition: 300ms ease-in;
+  width: 18%;
+  text-align:center;
+  font-size: 12px; 
+  
+  `
+
+export const OpenSource = styled.a`
+color: #293241;
+margin: 20px 0px;
+
+
+`
