@@ -2,12 +2,12 @@ function ValidateSign(values) {
     //FORM VALIDATIONS
   
     let errors = {};  
-    if (!values.name) {
-      errors.name = "Name Required";
+    if (!values.names) {
+      errors.names = "Name Required";
     }
   
     if (!values.message) {
-      errors.nmessage = "Please enter a message";
+      errors.message = "Please enter a message";
     }
   
     if (!values.subject) {

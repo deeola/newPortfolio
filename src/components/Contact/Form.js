@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Button,
+  ButtonControl,
   ErrorMessage,
   FormControl,
   FormInput,
@@ -34,9 +35,9 @@ const Form = () => {
           <FormInput
             onChange={handleChange}
             type="text"
-            name=" name"
-            value={values.name}
-            id="name"
+            name="names"
+            value={values.names}
+            id="names"
           />
         </FormControl>
         <FormControl>
@@ -77,7 +78,10 @@ const Form = () => {
             id="message"
           />
         </FormControl>
+        <ButtonControl>
         <Button type="submit">SUBMIT</Button>
+        </ButtonControl>
+        
       </FormWrapper>
     </GeneralFormWrapper>
   );

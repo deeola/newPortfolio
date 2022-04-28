@@ -68,24 +68,82 @@ export const FormWrapper = styled.form`
 
 `
 
-export const LabelError = styled.div``
+export const LabelError = styled.div`
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 7px 0px;
+
+`
 
 
-export const Label = styled.label``
+export const Label = styled.label`
+color: #386cab;
+`
 
 
-export const ErrorMessage = styled.p``
+export const ErrorMessage = styled.p`
+color:red;
+font-size: 10px;
+`
 
-export const FormSuccess = styled.p``
+export const FormSuccess = styled.p`
+
+color: green;
+transition: 300ms ease-in;
+margin: 30px 0px;
+
+`
 
 
-export const FormControl = styled.div``
+export const FormControl = styled.div`
+width: 100%;
+`
 
 
-export const FormInput = styled.input``
+export const FormInput = styled.input`
+width: 100%;
+height: 40px;
+border-radius: 5px; 
+outline: none;
+border: 1px solid  #386cab;
+margin-bottom: 10px;
+padding: 7px;
+`
 
-export const FormTextArea = styled.textarea``
+export const FormTextArea = styled.textarea`
+width: 100%;
+height: 70px;
+border-radius: 5px; 
+outline: none;
+border: 1px solid  #386cab;
+margin-bottom: 10px;
+`
 
-export const Button = styled.button``
+export const  ButtonControl  = styled.div`
+display: flex;
+justify-content: center;
+align-item:center;
+width:100%;
+
+`
+
+export const Button = styled.button`
+padding: 15px 40px;
+background-color: #386cab;
+color: white;
+outline:none;
+border: none;
+border-radius: 5px; 
+font-size: 20px;
+cursor: pointer;
+transition: 300ms ease-in;
+
+&:hover{
+    background-color: #5390d9;
+    
+}
+
+`
 
 

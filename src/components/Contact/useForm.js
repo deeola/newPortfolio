@@ -4,7 +4,7 @@ const useForm = (callback, validate) => {
   //GENERAL INITIAL VALUES FOR INPUT
 
   const [values, setValues] = useState({
-    name: "",
+    names: "",
     email: "",
     subject: "",
     message: "",
