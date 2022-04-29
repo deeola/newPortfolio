@@ -23,7 +23,10 @@ export default {
     'languages' : 'Sprachen und Rahmenwerke',
     'aboutmessage' : "Hallo, mein Name ist Adeola Bamigboye, und ich bin ein leidenschaftlicher Front-End-Web-Entwickler, der es liebt, Web-Technologien zu nutzen, um Dinge zu entwickeln. Was mir an der Webentwicklung am meisten Spaß macht, ist die ständige Möglichkeit, Probleme zu lösen. Ich versuche, mich jedes Mal zu verbessern, wenn ich VS-Code öffne, und trage zu Open-Source-Projekten bei, um mich weiterzuentwickeln. Ich würde mich freuen, von Ihnen zu hören. Bitte zögern Sie nicht, mich für Projekte, Arbeitsmöglichkeiten oder sogar Kooperationen zu kontaktieren.",
     'tools' : 'Einige der von mir verwendeten Management-Prozesse und Deployment-Tools',
-    'opensource' : 'Klicken Sie hier ist der Link zu einigen Open-Source-Projekten, zu denen ich beigetragen habe.'
+    'opensource' : 'Klicken Sie hier ist der Link zu einigen Open-Source-Projekten, zu denen ich beigetragen habe.',
+    'techused' : "Verwendete Technologien",
+    'next': 'Nächstes',
+    'prev' : 'Vorheriges'
 
 
    

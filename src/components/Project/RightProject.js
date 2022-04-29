@@ -9,6 +9,7 @@ import {
   ImageContainer,
   RightContainer,
 } from "./ProjectStyling";
+import translate from "../../i18nProvider/translate";
 
 const RightProject = () => {
   const portfolioContext = useContext(PortfolioContext);
@@ -26,11 +27,12 @@ const RightProject = () => {
         )}
       </ImageContainer>
       <Buttons>
-        <Button onClick={setProjectNext}>Next Project</Button>
-        <Button onClick={setProjectPrev}>Previous Project</Button>
+        <Button onClick={setProjectNext}>{translate('next')}</Button>
+        <Button onClick={setProjectPrev}>{translate('prev')}</Button>
       </Buttons>
     </RightContainer>
   );
 };
 
 export default RightProject;
+

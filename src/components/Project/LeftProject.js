@@ -15,10 +15,11 @@ import NavLogo from "../Shared/NavLogo";
 import AllProjects from "./Allprojects";
 import { v4 as uuidv4 } from "uuid";
 import PortfolioContext from "../../context/portfolioContext";
+import translate from '../../i18nProvider/translate'
 
 const LeftProject = () => {
   const portfolioContext = useContext(PortfolioContext);
-  const { currents } = portfolioContext;
+  const { currents, locales } = portfolioContext;
 
   return (
     <LeftContainer>
@@ -28,8 +29,10 @@ const LeftProject = () => {
           project.key === currents + 1 ? (
             <Procontainer key={uuidv4()}>
               <ProjectName>{project.name}</ProjectName>
-              <ProjectDescription>{project.desc}</ProjectDescription>
-              <TechUsed>Technologies Used</TechUsed>
+              <ProjectDescription>{
+                locales === 'en-US' ? project.desc.en : project.desc.de
+                }</ProjectDescription>
+              <TechUsed>{translate('techused')}</TechUsed>
               <TechnologyUsed>
                 {project.tech.map((tech) => (
                   <Tech key={uuidv4()}>{tech}</Tech>
@@ -52,5 +55,6 @@ const LeftProject = () => {
     </LeftContainer>
   );
 };
+
 
 export default LeftProject;
