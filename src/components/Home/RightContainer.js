@@ -13,6 +13,7 @@ import {
 } from "./Homestyling";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fab, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import translate from "../../i18nProvider/translate";
 
 library.add(fab);
 
@@ -22,9 +23,9 @@ const RightContainer = () => {
       <ProjectContainer>
         <TopContainer>
           <EmptyDiv />
-          <p>LEARN MORE ABOUT ME</p>
+          <p>{translate('more')}</p>
         </TopContainer>
-        <BottomContainer>ABOUT</BottomContainer>
+        <BottomContainer>{translate('about')}</BottomContainer>
       </ProjectContainer>
       <BottomRightContainer>
         <EmptyRightDiv>

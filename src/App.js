@@ -1,8 +1,7 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import "./App.css";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Shared/Navbar";
-import PortfolioState from "./context/PortfolioState";
 import GlobalStyle from "./globalStyles";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Project from "./components/Project/Project";
@@ -14,29 +13,23 @@ import PortfolioContext from "./context/portfolioContext";
 function App() {
   const portfolioContext = useContext(PortfolioContext);
 
+  let { locale } = portfolioContext;
 
-  let {locale} = portfolioContext
-
- 
   return (
-   
-   
-         <I18nPropvider locale={locale}>
-        <BrowserRouter>
-          <div className="App">
-            <GlobalStyle />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/projects" element={<Project />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/about" element={<About />} />
-            </Routes>
-            <Navbar />
-          </div>
-        </BrowserRouter>
-        </I18nPropvider>
-    
-   
+    <I18nPropvider locale={locale}>
+      <BrowserRouter>
+        <div className="App">
+          <GlobalStyle />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Project />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+          <Navbar />
+        </div>
+      </BrowserRouter>
+    </I18nPropvider>
   );
 }
 

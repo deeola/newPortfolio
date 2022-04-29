@@ -8,6 +8,7 @@ import {
   ProjectContainer,
   TopContainer,
 } from "./Homestyling";
+import translate from "../../i18nProvider/translate";
 
 const MiddleContainer = () => {
   return (
@@ -15,12 +16,13 @@ const MiddleContainer = () => {
       <ProjectContainer>
         <TopContainer>
           <EmptyDiv />
-          <p>SAMPLE PROJECTS, ALL RESPONSIVE.</p>
+          <p> {translate('sample')}</p>
+
         </TopContainer>
-        <BottomContainer>PROJECTS</BottomContainer>
+        <BottomContainer> {translate('project')}</BottomContainer>
       </ProjectContainer>
       <BottomMiddleContainer>
-        <DownloadCV href="#">DOWNLOAD CV</DownloadCV>
+        <DownloadCV href="#">{translate('download')}</DownloadCV>
       </BottomMiddleContainer>
     </MiddleContainerDiv>
   );
