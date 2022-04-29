@@ -1,4 +1,5 @@
 import React from "react";
+import translate from "../../i18nProvider/translate";
 import NavLogo from "../Shared/NavLogo";
 import {
   Header,
@@ -15,8 +16,8 @@ const LeftAbout = () => {
     <LeftContainer>
       <NavLogo />
       <HeaderSkills>
-        <Header>About Me</Header>
-        <SkillTitle>Languages and Frameworks</SkillTitle>
+        <Header>{translate('aboutme')}</Header>
+        <SkillTitle>{translate('languages')}</SkillTitle>
         <Skills>
           <SkillWrapper>
             <Skill>HTML</Skill>
@@ -45,3 +46,5 @@ const LeftAbout = () => {
 };
 
 export default LeftAbout;
+
+

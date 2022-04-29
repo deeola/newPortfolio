@@ -1,4 +1,5 @@
 import React from "react";
+import translate from "../../i18nProvider/translate";
 import {
   Button,
   ButtonControl,
@@ -24,12 +25,12 @@ const Form = () => {
   return (
     <GeneralFormWrapper>
       <FormSuccess>
-        Thanks for messaging. I'll get back to you as soon as possible.
+      {translate('thanks')}
       </FormSuccess>
       <FormWrapper onSubmit={handleSubmit} noValidate>
         <FormControl>
           <LabelError>
-            <Label htmlFor="namr">Name</Label>
+            <Label htmlFor="namr">{translate('name')}</Label>
             {errors.name && <ErrorMessage>{errors.name}</ErrorMessage>}
           </LabelError>
           <FormInput
@@ -42,7 +43,7 @@ const Form = () => {
         </FormControl>
         <FormControl>
           <LabelError>
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="email">{translate('email')}</Label>
             {errors.email && <ErrorMessage>{errors.email}</ErrorMessage>}
           </LabelError>
           <FormInput
@@ -55,7 +56,7 @@ const Form = () => {
         </FormControl>
         <FormControl>
           <LabelError>
-            <Label htmlFor="subject">Subject</Label>
+            <Label htmlFor="subject">{translate('subject')}</Label>
             {errors.subject && <ErrorMessage>{errors.subject}</ErrorMessage>}
           </LabelError>
           <FormInput
@@ -68,7 +69,7 @@ const Form = () => {
         </FormControl>
         <FormControl>
           <LabelError>
-            <Label htmlFor="message">Message</Label>
+            <Label htmlFor="message">{translate('message')}</Label>
             {errors.message && <ErrorMessage>{errors.message}</ErrorMessage>}
           </LabelError>
           <FormTextArea
@@ -79,7 +80,7 @@ const Form = () => {
           />
         </FormControl>
         <ButtonControl>
-        <Button type="submit">SUBMIT</Button>
+        <Button type="submit">{translate('submit')}</Button>
         </ButtonControl>
         
       </FormWrapper>
@@ -88,3 +89,5 @@ const Form = () => {
 };
 
 export default Form;
+
+

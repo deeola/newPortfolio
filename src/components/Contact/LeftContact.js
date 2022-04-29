@@ -1,4 +1,5 @@
 import React from "react";
+import translate from "../../i18nProvider/translate";
 import NavLogo from "../Shared/NavLogo";
 import {  ContactDetails, ContactSubText, ContactTitle, LeftContainer, SimpleContact } from "./ContactStyling";
 
@@ -7,10 +8,9 @@ const LeftContact = () => {
     <LeftContainer>
       <NavLogo />
       <SimpleContact>
-        <ContactTitle>Contact</ContactTitle>
+        <ContactTitle>{translate('navcontact')}</ContactTitle>
         <ContactSubText>
-          Do you have any questions or comments? An idea you want to talk about?
-          Please feel free to contact me.
+          {translate('question')}
         </ContactSubText>
         <ContactDetails>
           <p>workwithdee.tech</p>
@@ -23,6 +23,8 @@ const LeftContact = () => {
 };
 
 export default LeftContact;
+
+
 
 
 
