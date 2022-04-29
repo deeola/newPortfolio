@@ -12,12 +12,15 @@ import {
 } from "./Homestyling";
 
 import flag from "../../assets/icons/usaflag.png";
+import germanflag from "../../assets/icons/germanflag.png";
 import NavLogo from "../Shared/NavLogo";
 import PortfolioContext from "../../context/portfolioContext";
+import { LOCALES } from "../../i18nProvider";
+import translate from '../../i18nProvider/translate'
 
 const LeftContainer = () => {
   const portfolioContext = useContext(PortfolioContext);
-  const { closeMenu } = portfolioContext;
+  const { closeMenu, setLocale } = portfolioContext;
   return (
     <LeftContainerDiv >
       <NavLogo />
@@ -29,9 +32,7 @@ const LeftContainer = () => {
         </MyName>
         <MyAbout>
           <p>
-            A highly motivated <span>frontend developer</span> that uses the art of design
-            and skill of programming to deliver an immersive and engaging user
-            experience through efficient web developement.
+            {translate('hello-message', {file: <span>frontend developer</span>})}
           </p>
         </MyAbout>
       </TextContainer>
@@ -39,7 +40,11 @@ const LeftContainer = () => {
         <EmptyDiv />
         <LanguageDiv>
           <img src={flag} alt="flag" />
-          <p>English</p>
+          <p onClick={() =>  setLocale(LOCALES.ENGLISH)}>EN</p>
+        </LanguageDiv>
+        <LanguageDiv>
+          <img src={germanflag} alt="flag" />
+          <p onClick={() =>  setLocale(LOCALES.GERMAN)}>DE</p>
         </LanguageDiv>
       </LanguageOptions>
       </Bottom>
@@ -49,3 +54,5 @@ const LeftContainer = () => {
 };
 
 export default LeftContainer;
+
+

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import portfolioContext from "./portfolioContext";
 import AllProjects from "../components/Project/Allprojects";
-
+import {  LOCALES } from "../i18nProvider";
 const PortfolioState = (props) => {
 // Navigation
 
@@ -69,6 +69,10 @@ let [currents, setCurrent] = useState(0);
       setCurrent(currents - 1);
     }
   }
+  
+  const [locale, setLocale] = useState(LOCALES.ENGLISH);
+
+  console.log(locale)
 
     //RETURN
   return (
@@ -86,7 +90,9 @@ let [currents, setCurrent] = useState(0);
         SubmitSignUp,
         currents,
         setProjectNext,
-        setProjectPrev
+        setProjectPrev,
+        locale,
+        setLocale
       }}
     >
       {props.children}
