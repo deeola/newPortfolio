@@ -23,7 +23,7 @@ const AllProjects = [
       },
     ],
     img: audiophile,
-    tech: ["storybook", "react", "javascript", "git", "pwa"],
+    tech: ["storybook", "react", "javascript", "git", "R. Hooks"],
   },
   {
     key: 2,
@@ -44,7 +44,7 @@ const AllProjects = [
       },
     ],
     img: sunnyside,
-    tech: ["storybook", "react", "html", "css", "pwa"],
+    tech: ["HTML", "CSS", "JAVASCRIPT", "GSAP", "PWA"],
   },
   {
     key: 3,

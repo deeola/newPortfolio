@@ -22,7 +22,7 @@ const NavLogo = () => {
 
   return (
     <LogoHamContainer>
-      <LogoContainer>
+      <LogoContainer to='/'>
         <img src={logo} alt="logo" />
       </LogoContainer>
       <HamContainer>

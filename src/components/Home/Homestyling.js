@@ -30,11 +30,12 @@ export const LogoHamContainer = styled.div`
   justify-content: space-between;
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled(Link)`
   width: 60px;
   display: flex;
   align-items: center;
   cursor: Pointer;
+  text-decoration: none;
 
   img {
     display: block;

@@ -90,18 +90,49 @@ export const RightContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  
 `;
 
 
 export const ImageContainer = styled.div`
 
+padding: 0px 50px;
+
+
+`
+
+export const Image = styled.img`
+
+width: 100%;
+display: block;
 `
 
 export const Buttons = styled.div`
 
+display: flex;
+justify-content: space-between;
+width: 50%;
+margin: 50px  200px 0px 0px ;
 `
 
 
-export const Image = styled.img``
 
-export const Button = styled.button``
+
+export const Button = styled.button`
+padding: 15px 20px;
+background: none;
+outline: none;
+border: 1px solid #5390d9;
+color:#5390d9;
+cursor: pointer; 
+transition: 300ms ease-in;
+border-radius: 5px; 
+width: 33%;
+font-weight: 700;
+
+&: hover{
+  background-color: #5390d9;
+  color: white;
+}
+
+`
