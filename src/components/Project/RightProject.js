@@ -2,28 +2,34 @@ import React, { useContext } from "react";
 import PortfolioContext from "../../context/portfolioContext";
 import AllProjects from "./Allprojects";
 import { v4 as uuidv4 } from "uuid";
+import {
+  Button,
+  Buttons,
+  Image,
+  ImageContainer,
+  RightContainer,
+} from "./ProjectStyling";
 
 const RightProject = () => {
   const portfolioContext = useContext(PortfolioContext);
   const { setProjectNext, setProjectPrev, currents } = portfolioContext;
 
   return (
-    <div>
-      {AllProjects.map((project) =>
-        project.key === currents + 1 ? (
-          <div key={uuidv4()}>
-            <img src={project.img} alt="img" />
-          </div>
-        ) : (
-          ""
-        )
-      )}
-
-      <>
-        <button onClick={setProjectNext}>Next</button>
-        <button onClick={setProjectPrev}>Prev</button>
-      </>
-    </div>
+    <RightContainer>
+      <ImageContainer>
+        {AllProjects.map((project) =>
+          project.key === currents + 1 ? (
+            <Image key={uuidv4()} src={project.img} alt="img" />
+          ) : (
+            ""
+          )
+        )}
+      </ImageContainer>
+      <Buttons>
+        <Button onClick={setProjectNext}>Next Project</Button>
+        <Button onClick={setProjectPrev}>Previous Project</Button>
+      </Buttons>
+    </RightContainer>
   );
 };
 
