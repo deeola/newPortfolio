@@ -1,58 +1,57 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import portfolioContext from "./portfolioContext";
 import AllProjects from "../components/Project/Allprojects";
-import {  LOCALES } from "../i18nProvider";
+import { LOCALES } from "../i18nProvider";
 const PortfolioState = (props) => {
-// Navigation
+  // Navigation
 
-const [hamOpen, setHamOpen] = useState(false);
-const [closeIcon, setCloseIcon] = useState(false);
-const [openIcon, setOpenIcon] = useState(false);
+  const [hamOpen, setHamOpen] = useState(false);
+  const [closeIcon, setCloseIcon] = useState(false);
+  const [openIcon, setOpenIcon] = useState(false);
 
-const ulDisplay = () => {
-  return hamOpen ? {} : { display: "none" };
-};
+  const ulDisplay = () => {
+    return hamOpen ? {} : { display: "none" };
+  };
 
-//DISPLAY CLOSE ICON
-const DisplayCloseIcon = () => {
-  return closeIcon ? { display: "block" } : { display: "none" };
-};
+  //DISPLAY CLOSE ICON
+  const DisplayCloseIcon = () => {
+    return closeIcon ? { display: "block" } : { display: "none" };
+  };
 
-//DISPLAY OPEN ICON
-const DisplayOpenIcon = () => {
-  return openIcon ? { display: "none" } : { display: "block" };
-};
+  //DISPLAY OPEN ICON
+  const DisplayOpenIcon = () => {
+    return openIcon ? { display: "none" } : { display: "block" };
+  };
 
-//MENU STYLE
-const displayMenu = () => {
-  setHamOpen(true);
-  setCloseIcon(true);
-  setOpenIcon(true);
-};
+  //MENU STYLE
+  const displayMenu = () => {
+    setHamOpen(true);
+    setCloseIcon(true);
+    setOpenIcon(true);
+  };
 
-const closeMenu = () => {
-  setHamOpen(false);
-  setCloseIcon(false);
-  setOpenIcon(false);
-};
+  const closeMenu = () => {
+    setHamOpen(false);
+    setCloseIcon(false);
+    setOpenIcon(false);
+  };
 
-//LOADING
-const [isSubmitted, setIsSubmitted] = useState(false);
+  //LOADING
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
-const Submitform = () => {
-  setIsSubmitted(true);
-}
+  const Submitform = () => {
+    setIsSubmitted(true);
+  };
 
-const [signuptrue, setSignuptrue] = useState(false);
+  const [signuptrue, setSignuptrue] = useState(false);
 
-function SubmitSignUp() {
-  setSignuptrue(true);
-}
+  function SubmitSignUp() {
+    setSignuptrue(true);
+  }
 
+  //caurosel
 
-//caurosel
-
-let [currents, setCurrent] = useState(0);
+  let [currents, setCurrent] = useState(0);
 
   const setProjectNext = () => {
     if (currents >= AllProjects.length - 1) {
@@ -71,8 +70,9 @@ let [currents, setCurrent] = useState(0);
   }
 
   //i18n
-  
+
   const [locale, setLocale] = useState(LOCALES.ENGLISH);
+
 
   return (
     <portfolioContext.Provider
@@ -91,13 +91,13 @@ let [currents, setCurrent] = useState(0);
         setProjectNext,
         setProjectPrev,
         locale,
-        setLocale
+        setLocale,
+        
       }}
     >
       {props.children}
     </portfolioContext.Provider>
   );
-
-}
+};
 
 export default PortfolioState;

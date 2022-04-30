@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import PortfolioState from './context/PortfolioState';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
 root.render(
   <PortfolioState>
     <App />

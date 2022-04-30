@@ -64,8 +64,16 @@ text-decoration: none;
 
 `
 
-export const LoadingScreenContainer = styled.div``
-export const LoadingImage= styled.img``
+export const LoadingScreenContainer = styled.div`
+display : flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100vh;
+
+
+
+`
 
 //Keyframes
 
@@ -124,16 +132,13 @@ transform-box: fill-box;
 
 
 export const ColoredA = styled.g`
-animation: ${ColoredAkeyframe} 1.5s linear infinite ;
-animation-delay: 2s;
+animation: ${ColoredAkeyframe} 800ms linear infinite ;
 `
 export const ColoredB = styled.g`
-animation: ${ColoredAkeyframe} 1.5s linear infinite 1s  ;
-animation-delay: 2s;
+animation: ${ColoredAkeyframe} 800ms linear infinite  ;
 `
 export const ColoredREC = styled.g`
-animation: ${ColoredReckeyframe} 1.5s linear infinite  1s ;
-animation-delay: 2s;
+animation: ${ColoredReckeyframe} 800ms linear infinite   ;
 `
 
 
