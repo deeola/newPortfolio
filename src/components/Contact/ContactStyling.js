@@ -89,7 +89,6 @@ font-size: 10px;
 
 export const FormSuccess = styled.p`
 
-color: green;
 transition: 300ms ease-in;
 margin: 30px 0px;
 

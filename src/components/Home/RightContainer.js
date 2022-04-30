@@ -22,7 +22,6 @@ const RightContainer = () => {
     <RightContainerDiv to='/about'>
       <ProjectContainer>
         <TopContainer>
-          <EmptyDiv />
           <p>{translate('more')}</p>
         </TopContainer>
         <BottomContainer>{translate('about')}</BottomContainer>

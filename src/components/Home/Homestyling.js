@@ -194,7 +194,6 @@ export const LanguageOptions = styled.div`
   }
   @media (max-width: 375px) {
     margin-top: 10px;
-    
   }
 `;
 
@@ -239,7 +238,6 @@ export const EmptyDiv = styled.div`
   }
 
   @media (max-width: 653px) {
-
     height: 50px;
   }
 
@@ -307,6 +305,21 @@ export const TopContainer = styled.div`
   p {
     color: #5390d9;
     margin-top: 6px;
+    
+  }
+  @media (max-width: 843px) {
+  }
+
+  @media (max-width: 653px) {
+    p {
+      color: #5390d9;
+      font-size: 0.7rem;
+      padding : 0;
+      display: inline;
+    }
+  }
+
+  @media (max-width: 375px) {
   }
 `;
 
@@ -314,6 +327,19 @@ export const BottomContainer = styled.h1`
   font-size: 70px;
   font-weight: 700;
   color: #5390d9;
+
+  @media (max-width: 843px) {
+  }
+
+  @media (max-width: 653px) {
+    font-size: 2rem;
+    
+  }
+
+  @media (max-width: 375px) {
+
+    background-color: red;
+  }
 `;
 
 export const MiddleContainerDiv = styled(Link)`
@@ -348,6 +374,13 @@ export const MiddleContainerDiv = styled(Link)`
 
   @media (max-width: 653px) {
     height: 80%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    border-bottom: 7px solid #5390d9;
+  }
+
+  @media (max-width: 375px) {
   }
 `;
 
@@ -358,7 +391,9 @@ export const ProjectContainer = styled.div`
   }
 
   @media (max-width: 653px) {
-    display: none;
+  }
+
+  @media (max-width: 375px) {
   }
 `;
 
@@ -465,8 +500,13 @@ export const RightContainerDiv = styled(Link)`
   }
 
   @media (max-width: 653px) {
-    background: red;
     height: 20%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    border-bottom: 7px solid #5390d9;
+  }
+  @media (max-width: 375px) {
   }
 `;
 
