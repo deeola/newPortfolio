@@ -18,6 +18,7 @@ import NavLogo from "../Shared/NavLogo";
 import PortfolioContext from "../../context/portfolioContext";
 import { LOCALES } from "../../i18nProvider";
 import translate from "../../i18nProvider/translate";
+import LoadingScreen from "../Shared/LoadingScreen";
 
 const LeftContainer = () => {
   const portfolioContext = useContext(PortfolioContext);

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { keyframes } from "styled-components";
 
 
 export const NavbarContainer = styled.div`
@@ -62,5 +63,80 @@ text-decoration: none;
   }
 
 `
+
+export const LoadingScreenContainer = styled.div``
+export const LoadingImage= styled.img``
+
+//Keyframes
+
+const ColoredReckeyframe = keyframes`
+from{
+transform : translateX(24px);
+opacity : 0;
+} 
+
+to{
+  transform : translateX(0px)
+  opacity : 1;
+}
+`
+
+const TransReckeyframe = keyframes`
+from{
+
+display : block;
+} 
+
+to{
+  display : none;
+}
+`
+
+
+const ColoredAkeyframe = keyframes`
+from{
+opacity : 0;
+} 
+
+to{
+  opacity : 1;
+}
+`
+
+
+
+//Animation
+
+
+export const TransA = styled.g`
+animation: ${TransReckeyframe} 1s linear ;
+`
+export const TransB = styled.g`
+
+animation: ${TransReckeyframe} 1s linear ;
+`
+export const TransREC = styled.g`
+animation: ${TransReckeyframe} 1s linear ;
+transform-box: fill-box;
+`
+
+
+
+
+export const ColoredA = styled.g`
+animation: ${ColoredAkeyframe} 1.5s linear infinite ;
+animation-delay: 2s;
+`
+export const ColoredB = styled.g`
+animation: ${ColoredAkeyframe} 1.5s linear infinite 1s  ;
+animation-delay: 2s;
+`
+export const ColoredREC = styled.g`
+animation: ${ColoredReckeyframe} 1.5s linear infinite  1s ;
+animation-delay: 2s;
+`
+
+
+
 
 
