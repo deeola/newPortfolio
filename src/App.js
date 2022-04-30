@@ -35,7 +35,7 @@ function App() {
 
   return (
     <I18nPropvider locale={locale}>
-      <BrowserRouter>
+      <BrowserRouter basename={window.location.pathname || ""}>
         {loading ? (
           <LoadingScreen />
         ) : (
