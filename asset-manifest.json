@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/newPortfolio/static/css/main.e6c13ad2.css",
+    "main.js": "/newPortfolio/static/js/main.6a9eb4fe.js",
+    "static/js/787.35fe7324.chunk.js": "/newPortfolio/static/js/787.35fe7324.chunk.js",
+    "static/media/heritage.png": "/newPortfolio/static/media/heritage.38b9a4b9115bef5c0fea.png",
+    "static/media/archstudio.png": "/newPortfolio/static/media/archstudio.e46666ef28a4ade94279.png",
+    "static/media/sunnyside.png": "/newPortfolio/static/media/sunnyside.d4311b0e4cb197196bd0.png",
+    "static/media/audiophile.png": "/newPortfolio/static/media/audiophile.b8546d56e63cdd59d3dc.png",
+    "static/media/usaflag.png": "/newPortfolio/static/media/usaflag.c411b87179caccac5954.png",
+    "static/media/logonew.svg": "/newPortfolio/static/media/logonew.78fcd7cece914bd46f732966a77792fd.svg",
+    "index.html": "/newPortfolio/index.html",
+    "static/media/ham-open.svg": "/newPortfolio/static/media/ham-open.8d9987d5befa75ec542bb7f6e4a0461e.svg",
+    "main.e6c13ad2.css.map": "/newPortfolio/static/css/main.e6c13ad2.css.map",
+    "main.6a9eb4fe.js.map": "/newPortfolio/static/js/main.6a9eb4fe.js.map",
+    "787.35fe7324.chunk.js.map": "/newPortfolio/static/js/787.35fe7324.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.6a9eb4fe.js"
+  ]
+}
