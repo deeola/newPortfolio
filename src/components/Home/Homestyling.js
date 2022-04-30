@@ -38,6 +38,7 @@ export const LeftContainerDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 
   @media (max-width: 843px) {
     width: 50%;
@@ -59,6 +60,27 @@ export const LogoHamContainer = styled.div`
   }
 
   @media (max-width: 653px) {
+    // position : absolute;
+    // z-index: 10;
+    // top: 0;
+    // left : 30px;
+    // margin: 0px auto;
+  }
+`;
+
+export const NLogoHamContainer = styled.div`
+display : none;
+  
+  @media (max-width: 843px) {
+  }
+
+  @media (max-width: 653px) {
+
+  display: flex;
+  width: 100%;
+  margin: 0px auto;
+  padding: 10px 0px;
+  justify-content: space-between;
   }
 `;
 
@@ -97,10 +119,14 @@ export const HamContainer = styled.div`
 
 export const CloseHam = styled.img`
   display: none;
-  width: 80%;
-  filter: invert(100%) sepia(0%) saturate(7433%) hue-rotate(231deg)
-    brightness(107%) contrast(100%);
+  width: 65%;
 `;
+
+export const NCloseHam = styled.img`
+  display: none;
+  width: 65%;
+`;
+
 
 export const OpenHam = styled.img`
   display: block;
@@ -135,7 +161,7 @@ export const MyName = styled.div`
 
   @media (max-width: 653px) {
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
   }
 
@@ -336,13 +362,23 @@ export const TopContainerMR = styled.div`
     bottom: 0;
     transition: 1s ease-in-out;
   }
+
+  @media (max-width: 913px) {
+    p {
+      font-size: 12px;
+    }
+  }
+
   @media (max-width: 843px) {
     p {
       position: relative;
       margin-left: 0;
       margin-top: 30px;
+      font-size: 16px;
     }
   }
+
+ 
 
   @media (max-width: 653px) {
     p {
@@ -382,6 +418,13 @@ export const BottomContainer = styled.h1`
   font-size: 70px;
   font-weight: 700;
   color: #5390d9;
+
+  @media (max-width: 913px) {
+    
+      font-size: 2.7rem;
+   
+  }
+
 
   @media (max-width: 843px) {
     font-size: 3rem;
@@ -501,6 +544,40 @@ export const DownloadCV = styled.a`
     background-color: #386cab;
     border: none;
   }
+`;
+
+export const NDownloadCV = styled.a`
+
+display : none; 
+
+@media (max-width: 653px) {
+  display : block;
+  color: #293241;
+  background-color: none;
+  border: 2px solid #293241;
+  padding: 15px 15px;
+  text-decoration: none;
+  transition: 300ms ease-in;
+  z-index: 2;
+  width : 50%;
+  position : relative;
+  margin: 150px 0 auto auto; 
+  text-align : center;
+  font-weight: 700;
+}
+
+//GALAXY-FOLD
+  @media (max-width: 285px) {
+
+    margin: 100px 0 0px auto; 
+    font-size: 10px;
+  }
+
+
+ 
+
+
+
 `;
 
 //RightContainer

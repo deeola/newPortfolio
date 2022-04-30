@@ -1,40 +1,30 @@
 import React, { useContext } from "react";
 import {
-  CloseHam,
+  NCloseHam,
   HamContainer,
   LogoContainer,
-  LogoHamContainer,
-  OpenHam,
+  NLogoHamContainer,
 } from "../Home/Homestyling";
 
-import logo from "./../../assets/logonew.svg";
-import HamOpen from "../../assets/icons/ham-open.svg";
-import HamClose from "../../assets/icons/Xclose.png";
+import logo from "./../../assets/icons/blacklogo.png";
+import HamClose from "../../assets/icons/blackclose.png";
 import PortfolioContext from "../../context/portfolioContext";
 
-const NavLogo = () => {
+const BlueNavLogo = () => {
   const profileContext = useContext(PortfolioContext);
 
-  const { DisplayOpenIcon, DisplayCloseIcon, displayMenu, closeMenu } =
+  const { DisplayCloseIcon, closeMenu } =
     profileContext;
 
   
 
   return (
-    <LogoHamContainer>
+    <NLogoHamContainer>
       <LogoContainer to='/'>
         <img src={logo} alt="logo" />
       </LogoContainer>
       <HamContainer>
-        <OpenHam
-          src={HamOpen}
-          alt="openMenu"
-          style={DisplayOpenIcon()}
-          onClick={() => {
-            displayMenu();
-          }}
-        />
-        <CloseHam
+        <NCloseHam
           src={HamClose}
           alt="closeMenu"
           style={DisplayCloseIcon()}
@@ -43,8 +33,8 @@ const NavLogo = () => {
           }}
         />
       </HamContainer>
-    </LogoHamContainer>
+    </NLogoHamContainer>
   );
 };
 
-export default NavLogo;
+export default BlueNavLogo;
