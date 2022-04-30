@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 //Home
 export const HomeContainer = styled.div`
   display: flex;
-  max-height: 100vh;
+  height: 100vh;
   width: 100%;
   justify-content: space-between;
   position: relative;
