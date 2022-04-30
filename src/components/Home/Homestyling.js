@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 //Home
 export const HomeContainer = styled.div`
   display: flex;
-  height: 100vh;
+  max-height: 100vh;
   width: 100%;
   justify-content: space-between;
   position: relative;
@@ -39,14 +39,12 @@ export const LeftContainerDiv = styled.div`
   flex-direction: column;
   justify-content: space-between;
   
-
   @media (max-width: 843px) {
     width: 50%;
   }
 
   @media (max-width: 653px) {
     width: 100%;
-    height: 40vh;
   }
 `;
 
