@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useForm as Formik, ValidationError } from '@formspree/react';
 
 const useForm = (callback, validate) => {
   //GENERAL INITIAL VALUES FOR INPUT
@@ -26,8 +27,14 @@ const useForm = (callback, validate) => {
   };
   //handle submit event
 
-  const handleSubmit = (e) => {
+ 
+ 
+  
+  const handleSubmits = (e) => {
+    
+  
     e.preventDefault();
+
     setErrors(validate(values));
     setIsSubmitting(true);
   };
@@ -42,9 +49,11 @@ const useForm = (callback, validate) => {
 
   return {
     handleChange,
-    handleSubmit,
+    handleSubmits,
     values,
     errors,
+   
+    
   };
 };
 

@@ -118,6 +118,7 @@ border-radius: 5px;
 outline: none;
 border: 1px solid  #386cab;
 margin-bottom: 10px;
+padding: 7px;
 `
 
 export const  ButtonControl  = styled.div`

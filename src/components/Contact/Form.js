@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef} from "react";
 import translate from "../../i18nProvider/translate";
 import {
   Button,
@@ -18,7 +18,8 @@ import validate from "./ValidateSign";
 
 const Form = () => {
   const SubmitForm = () => {};
-  const { handleChange, handleSubmit, values, errors } = useForm(
+ 
+  const { handleChange, handleSubmits, values, errors } = useForm(
     SubmitForm,
     validate
   );
@@ -27,7 +28,7 @@ const Form = () => {
       <FormSuccess>
       {translate('thanks')}
       </FormSuccess>
-      <FormWrapper onSubmit={handleSubmit} noValidate>
+      <FormWrapper  onSubmit={handleSubmits} noValidate>
         <FormControl>
           <LabelError>
             <Label htmlFor="namr">{translate('name')}</Label>

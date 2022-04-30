@@ -69,12 +69,11 @@ let [currents, setCurrent] = useState(0);
       setCurrent(currents - 1);
     }
   }
+
+  //i18n
   
   const [locale, setLocale] = useState(LOCALES.ENGLISH);
 
-  console.log(locale)
-
-    //RETURN
   return (
     <portfolioContext.Provider
       value={{

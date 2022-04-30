@@ -26,6 +26,7 @@ export default {
     'opensource' : 'Click Here is the link to some open source projects that i have contributed to.',
     'techused' : 'Technologies Used',
     'next': 'Next Project',
-    'prev' : 'Previous Project'
+    'prev' : 'Previous Project',
+    'aboutmobile' : 'A Frontend Developer '
   },
 };
