@@ -4,12 +4,12 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   BottomContainer,
   BottomRightContainer,
-  EmptyDiv,
   ProjectContainer,
-  TopContainer,
+  TopContainerMR,
   RightContainerDiv,
   Icon,
   EmptyRightDiv,
+  EmptyAnimatedDiv,
 } from "./Homestyling";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fab, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -21,9 +21,10 @@ const RightContainer = () => {
   return (
     <RightContainerDiv to='/about'>
       <ProjectContainer>
-        <TopContainer>
-          <p>{translate('more')}</p>
-        </TopContainer>
+        <TopContainerMR>
+          <EmptyAnimatedDiv></EmptyAnimatedDiv>
+          <p> {translate('more')}</p>
+        </TopContainerMR>
         <BottomContainer>{translate('about')}</BottomContainer>
       </ProjectContainer>
       <BottomRightContainer>
@@ -39,3 +40,4 @@ const RightContainer = () => {
 };
 
 export default RightContainer;
+

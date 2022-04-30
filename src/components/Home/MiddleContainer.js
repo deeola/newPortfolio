@@ -3,10 +3,10 @@ import {
   BottomContainer,
   BottomMiddleContainer,
   DownloadCV,
-  EmptyDiv,
+  EmptyAnimatedDiv,
   MiddleContainerDiv,
   ProjectContainer,
-  TopContainer,
+  TopContainerMR,
 } from "./Homestyling";
 import translate from "../../i18nProvider/translate";
 
@@ -14,9 +14,10 @@ const MiddleContainer = () => {
   return (
     <MiddleContainerDiv to='projects'>
       <ProjectContainer>
-        <TopContainer>
+        <TopContainerMR>
+          <EmptyAnimatedDiv></EmptyAnimatedDiv>
           <p> {translate('sample')}</p>
-        </TopContainer>
+        </TopContainerMR>
         <BottomContainer> {translate('project')}</BottomContainer>
       </ProjectContainer>
       <BottomMiddleContainer>

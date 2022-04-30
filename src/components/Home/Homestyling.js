@@ -305,7 +305,6 @@ export const TopContainer = styled.div`
   p {
     color: #5390d9;
     margin-top: 6px;
-    
   }
   @media (max-width: 843px) {
   }
@@ -314,12 +313,68 @@ export const TopContainer = styled.div`
     p {
       color: #5390d9;
       font-size: 0.7rem;
-      padding : 0;
+      padding: 0;
       display: inline;
     }
   }
 
   @media (max-width: 375px) {
+  }
+`;
+
+export const TopContainerMR = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-item: top;
+  position: relative;
+
+  p {
+    color: #5390d9;
+    margin-top: 6px;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 0;
+    transition: 1s ease-in-out;
+  }
+  @media (max-width: 843px) {
+    p {
+      position: relative;
+      margin-left: 0;
+      margin-top: 30px;
+    }
+  }
+
+  @media (max-width: 653px) {
+    p {
+      color: #5390d9;
+      font-size: 0.7rem;
+      padding: 0;
+      display: inline;
+    }
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+const AnimateEmpty = keyframes`
+    0% {  height: 30%; }
+    100% { height: 100%}
+
+
+`;
+
+export const EmptyAnimatedDiv = styled.div`
+  width: 2px;
+  height: 100px;
+  content: "";
+  background-color: white;
+  visibility : hidden;
+  transition: 1s ease-in-out;
+  animation: ${AnimateEmpty} 1s  ease-in;
+
+  @media (max-width: 843px) {
+    display: none;
   }
 `;
 
@@ -329,16 +384,14 @@ export const BottomContainer = styled.h1`
   color: #5390d9;
 
   @media (max-width: 843px) {
+    font-size: 3rem;
   }
 
   @media (max-width: 653px) {
     font-size: 2rem;
-    
   }
 
   @media (max-width: 375px) {
-
-    background-color: red;
   }
 `;
 
@@ -363,6 +416,22 @@ export const MiddleContainerDiv = styled(Link)`
     p {
       color: white;
     }
+  }
+
+  &:hover ${TopContainerMR} {
+   
+   
+
+    p {
+      color: white;
+    }
+  }
+
+  &:hover ${EmptyAnimatedDiv} {
+
+    visibility : visible;
+    height : 120px;
+ 
   }
 
   @media (max-width: 843px) {
@@ -410,6 +479,9 @@ export const BottomMiddleContainer = styled.div`
 
   @media (max-width: 653px) {
     display: none;
+  }
+
+  @media (max-width: 375px) {
   }
 `;
 
@@ -483,6 +555,22 @@ export const RightContainerDiv = styled(Link)`
     p {
       color: white;
     }
+  }
+
+  &:hover ${TopContainerMR} {
+    p {
+      color: white;
+    }
+  }
+  &:hover ${EmptyAnimatedDiv} {
+
+    visibility : visible;
+    height : 120px;
+ 
+  }
+
+  &:hover ${EmptyAnimatedDiv} {
+    display: block;
   }
 
   &:hover ${Icon} {
