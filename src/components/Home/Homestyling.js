@@ -10,7 +10,7 @@ export const HomeContainer = styled.div`
   position: relative;
   @media (max-width: 653px) {
     flex-direction: column;
-    background : teal;
+    background: teal;
   }
 `;
 
@@ -25,7 +25,12 @@ export const MiddleRightContainer = styled.div`
 
   @media (max-width: 653px) {
     width: 100%;
-    height : 70%;
+    height: 70%;
+  }
+
+  //GALAXY-FOLD
+  @media (max-width: 285px) {
+   height: 60%;
   }
 `;
 
@@ -37,15 +42,19 @@ export const LeftContainerDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+
   @media (max-width: 843px) {
     width: 50%;
   }
 
   @media (max-width: 653px) {
     width: 100%;
-    height : 30%;
-    
+    height: 30%;
+  }
+
+  //GALAXY-FOLD
+  @media (max-width: 285px) {
+   height: 40%;
   }
 `;
 
@@ -68,18 +77,17 @@ export const LogoHamContainer = styled.div`
 `;
 
 export const NLogoHamContainer = styled.div`
-display : none;
-  
+  display: none;
+
   @media (max-width: 843px) {
   }
 
   @media (max-width: 653px) {
-
-  display: flex;
-  width: 100%;
-  margin: 0px auto;
-  padding: 10px 0px;
-  justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px 0px;
+    justify-content: space-between;
   }
 `;
 
@@ -126,7 +134,6 @@ export const NCloseHam = styled.img`
   width: 65%;
 `;
 
-
 export const OpenHam = styled.img`
   display: block;
   width: 100%;
@@ -135,7 +142,7 @@ export const OpenHam = styled.img`
 export const TextContainer = styled.div`
   width: 85%;
   margin: 0px auto;
-  padding: 20px 0px;
+  padding: 0px 0px;
 
   @media (max-width: 843px) {
   }
@@ -159,13 +166,13 @@ export const MyName = styled.div`
 
   @media (max-width: 653px) {
     h1 {
-      font-size: 2rem;
+      font-size: 39px;
     }
   }
 
   @media (max-width: 375px) {
     h1 {
-      font-size: 2.3rem;
+      font-size: 30px;
     }
   }
 `;
@@ -182,6 +189,7 @@ export const MyAboutMobile = styled.p`
     color: #5390d9;
     text-align: left;
     font-size: 16px;
+    margin-bottom : 10px;
   }
 `;
 
@@ -214,8 +222,10 @@ export const LanguageOptions = styled.div`
   @media (max-width: 653px) {
     font-size: 16px;
     justify-content: space-between;
-    // margin-bottom : 20px;
+    margin-bottom : 20px;
     margin-top: 0px;
+    
+    
   }
   @media (max-width: 375px) {
     margin-top: 10px;
@@ -227,6 +237,50 @@ const AnimateLine = keyframes`
     50% { margin-top: 100%; height: 0px; }
     51% { margin-top: 0%; height: 0px; }
     100% { height: 100%; margin-top: 0%;}
+
+
+`;
+
+const AnimateLineX = keyframes`
+    0% { margin-left: 0; width: 100%; }
+    50% { margin-left: 100%; width: 0px; }
+    51% { margin-left: 0%; width: 0px; }
+    100% { width: 100%; margin-left: 0%;}
+
+
+`;
+
+export const EmptyDivMobile = styled.div`
+display : none;
+
+@media (max-width: 653px) {
+  height: 1px;
+  width: 30%;
+  display : block;
+  position: relative;
+  &:before {
+    background: white;
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: 0;
+    box-shadow: none;
+    overflow: hidden;
+    animation: ${AnimateLineX} 2s 1;
+    -moz-animation: ${AnimateLineX} 2s 1;
+    -webkit-animation: ${AnimateLineX} 2s 1;
+    -o-animation: ${AnimateLineX} 2s 1;
+    animation-iteration-count: infinite;
+    border-left: 0px solid #ae2b24;
+    -webkit-transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+  }
+}
 
 
 `;
@@ -263,16 +317,7 @@ export const EmptyDiv = styled.div`
   }
 
   @media (max-width: 653px) {
-    height: 50px;
-  }
-
-  @media (max-width: 375px) {
-    height: 45px;
-  }
-
-  //GALAXY-FOLD
-  @media (max-width: 285px) {
-    height: 40px;
+    display: none;
   }
 `;
 
@@ -295,8 +340,8 @@ export const LanguageDiv = styled.div`
   }
 
   @media (max-width: 653px) {
-    margin-left: 12px;
-    display: inline-block;
+    margin-left: 0px;
+
     img {
       display: none;
     }
@@ -310,6 +355,10 @@ export const LanguageDiv = styled.div`
 
 export const Languages = styled.div`
   display: flex;
+  @media (max-width: 653px) {
+  width : 60px;
+  justify-content:space-between;
+  }
 `;
 
 export const Bottom = styled.div`
@@ -377,8 +426,6 @@ export const TopContainerMR = styled.div`
     }
   }
 
- 
-
   @media (max-width: 653px) {
     p {
       color: #5390d9;
@@ -404,9 +451,9 @@ export const EmptyAnimatedDiv = styled.div`
   height: 100px;
   content: "";
   background-color: white;
-  visibility : hidden;
+  visibility: hidden;
   transition: 1s ease-in-out;
-  animation: ${AnimateEmpty} 1s  ease-in;
+  animation: ${AnimateEmpty} 1s ease-in;
 
   @media (max-width: 843px) {
     display: none;
@@ -419,11 +466,8 @@ export const BottomContainer = styled.h1`
   color: #5390d9;
 
   @media (max-width: 913px) {
-    
-      font-size: 2.7rem;
-   
+    font-size: 2.7rem;
   }
-
 
   @media (max-width: 843px) {
     font-size: 3rem;
@@ -461,19 +505,14 @@ export const MiddleContainerDiv = styled(Link)`
   }
 
   &:hover ${TopContainerMR} {
-   
-   
-
     p {
       color: white;
     }
   }
 
   &:hover ${EmptyAnimatedDiv} {
-
-    visibility : visible;
-    height : 120px;
- 
+    visibility: visible;
+    height: 120px;
   }
 
   @media (max-width: 843px) {
@@ -488,7 +527,7 @@ export const MiddleContainerDiv = styled(Link)`
     justify-content: flex-end;
     flex-direction: column;
     border-bottom: 7px solid #5390d9;
-    height :80%;
+    height: 80%;
   }
 
   @media (max-width: 375px) {
@@ -546,37 +585,29 @@ export const DownloadCV = styled.a`
 `;
 
 export const NDownloadCV = styled.a`
+  display: none;
 
-display : none; 
-
-@media (max-width: 653px) {
-  display : block;
-  color: #293241;
-  background-color: none;
-  border: 2px solid #293241;
-  padding: 15px 15px;
-  text-decoration: none;
-  transition: 300ms ease-in;
-  z-index: 2;
-  width : 50%;
-  position : relative;
-  margin: 150px 0 auto auto; 
-  text-align : center;
-  font-weight: 700;
-}
-
-//GALAXY-FOLD
-  @media (max-width: 285px) {
-
-    margin: 100px 0 0px auto; 
-    font-size: 10px;
+  @media (max-width: 653px) {
+    display: block;
+    color: #293241;
+    background-color: none;
+    border: 2px solid #293241;
+    padding: 15px 15px;
+    text-decoration: none;
+    transition: 300ms ease-in;
+    z-index: 2;
+    width: 50%;
+    position: relative;
+    margin: 150px 0 auto auto;
+    text-align: center;
+    font-weight: 700;
   }
 
-
- 
-
-
-
+  //GALAXY-FOLD
+  @media (max-width: 285px) {
+    margin: 100px 0 0px auto;
+    font-size: 10px;
+  }
 `;
 
 //RightContainer
@@ -639,10 +670,8 @@ export const RightContainerDiv = styled(Link)`
     }
   }
   &:hover ${EmptyAnimatedDiv} {
-
-    visibility : visible;
-    height : 120px;
- 
+    visibility: visible;
+    height: 120px;
   }
 
   &:hover ${EmptyAnimatedDiv} {
@@ -668,7 +697,7 @@ export const RightContainerDiv = styled(Link)`
     justify-content: flex-end;
     flex-direction: column;
     border-bottom: 7px solid #5390d9;
-    height :80%;
+    height: 80%;
   }
   @media (max-width: 375px) {
   }

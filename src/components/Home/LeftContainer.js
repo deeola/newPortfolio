@@ -10,6 +10,7 @@ import {
   Bottom,
   MyAboutMobile,
   Languages,
+  EmptyDivMobile 
 } from "./Homestyling";
 
 import flag from "../../assets/icons/usaflag.png";
@@ -26,6 +27,7 @@ const LeftContainer = () => {
   return (
     <LeftContainerDiv>
       <NavLogo />
+      
       <Bottom onClick={closeMenu}>
         <TextContainer>
           <MyName>
@@ -37,11 +39,14 @@ const LeftContainer = () => {
                 file: <span>frontend developer</span>,
               })}
             </p>
+           
           </MyAbout>
           <MyAboutMobile>{translate("aboutmobile")}</MyAboutMobile>
+          <EmptyDivMobile />
         </TextContainer>
-        <LanguageOptions>
-          {/* <EmptyDiv /> */}
+        
+        <LanguageOptions>  
+          <EmptyDiv />
           <Languages>
             <LanguageDiv>
               <img src={flag} alt="flag" />
