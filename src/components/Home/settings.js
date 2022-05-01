@@ -11,6 +11,7 @@ export const HomeContainer = styled.div`
   @media (max-width: 653px) {
     flex-direction: column;
     background : teal;
+    height : 80%;
   }
 `;
 
@@ -25,7 +26,8 @@ export const MiddleRightContainer = styled.div`
 
   @media (max-width: 653px) {
     width: 100%;
-    height : 70%;
+    background : green;
+    background: yellow;
   }
 `;
 
@@ -44,7 +46,6 @@ export const LeftContainerDiv = styled.div`
 
   @media (max-width: 653px) {
     width: 100%;
-    height : 30%;
     
   }
 `;
@@ -485,10 +486,9 @@ export const MiddleContainerDiv = styled(Link)`
 
   @media (max-width: 653px) {
     display: flex;
-    justify-content: flex-end;
+    // justify-content: flex-end;
     flex-direction: column;
     border-bottom: 7px solid #5390d9;
-    height :80%;
   }
 
   @media (max-width: 375px) {
@@ -668,7 +668,6 @@ export const RightContainerDiv = styled(Link)`
     justify-content: flex-end;
     flex-direction: column;
     border-bottom: 7px solid #5390d9;
-    height :80%;
   }
   @media (max-width: 375px) {
   }
