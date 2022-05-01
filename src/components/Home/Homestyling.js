@@ -10,7 +10,6 @@ export const HomeContainer = styled.div`
   position: relative;
   @media (max-width: 653px) {
     flex-direction: column;
-    background: teal;
   }
 `;
 
@@ -410,12 +409,12 @@ export const TopContainerMR = styled.div`
     bottom: 0;
     transition: 1s ease-in-out;
   }
-
-  @media (max-width: 913px) {
+  @media (max-width: 1056px) {
     p {
       font-size: 12px;
     }
   }
+
 
   @media (max-width: 843px) {
     p {
@@ -464,6 +463,10 @@ export const BottomContainer = styled.h1`
   font-size: 70px;
   font-weight: 700;
   color: #5390d9;
+
+  @media (max-width: 1056px) {
+    font-size: 2.9rem;
+  }
 
   @media (max-width: 913px) {
     font-size: 2.7rem;
@@ -538,9 +541,11 @@ export const ProjectContainer = styled.div`
   width: 85%;
   margin: 0px auto;
   @media (max-width: 843px) {
+    margin-top:30px;
   }
 
   @media (max-width: 653px) {
+    margin-top:0px;
   }
 
   @media (max-width: 375px) {

@@ -12,7 +12,7 @@ import translate from "../../i18nProvider/translate";
 
 const MiddleContainer = () => {
   return (
-    <MiddleContainerDiv to='projects'>
+    <MiddleContainerDiv to='/projects'>
       <ProjectContainer>
         <TopContainerMR>
           <EmptyAnimatedDiv />

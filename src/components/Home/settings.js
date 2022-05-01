@@ -26,8 +26,6 @@ export const MiddleRightContainer = styled.div`
 
   @media (max-width: 653px) {
     width: 100%;
-    background : green;
-    background: yellow;
   }
 `;
 
