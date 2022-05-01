@@ -35,7 +35,7 @@ function App() {
 
   return (
     <I18nPropvider locale={locale}>
-      <BrowserRouter basename={'/'}>
+      <BrowserRouter basename={'/newPortfolio'}>
         {loading ? (
           <LoadingScreen />
         ) : (
