@@ -14,18 +14,16 @@ const GlobalStyle = createGlobalStyle`
     display: block;
   }
 
-html{
-  background: teal;
-  height: 100vh;
-  
-}
 
-body{
-  background : orange;
-  overflow-y: hidden;
-  height: 100%;
-  
-}
+
+
+html, body { 
+  overflow:hidden;
+    margin:0;
+    padding:0;
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+ }
 `;
 
 export default GlobalStyle;
