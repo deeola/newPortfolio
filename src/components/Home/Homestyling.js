@@ -5,11 +5,9 @@ import { Link } from "react-router-dom";
 //Home
 export const HomeContainer = styled.div`
   display: flex;
-  height: 100vh;
   width: 100%;
   justify-content: space-between;
   position: relative;
-
   @media (max-width: 653px) {
     flex-direction: column;
   }
@@ -25,8 +23,9 @@ export const MiddleRightContainer = styled.div`
   }
 
   @media (max-width: 653px) {
-    height: 60vh;
     width: 100%;
+    height: 70vh;
+    background : gray;
   }
 `;
 
@@ -45,6 +44,7 @@ export const LeftContainerDiv = styled.div`
 
   @media (max-width: 653px) {
     width: 100%;
+    height: 30vh;
   }
 `;
 
@@ -140,8 +140,7 @@ export const TextContainer = styled.div`
   }
 
   @media (max-width: 653px) {
-    font-size: 16px;
-    padding: 0px 0px 20px 0px;
+    // padding: 0px 0px 20px 0px;
   }
 `;
 
@@ -159,7 +158,7 @@ export const MyName = styled.div`
 
   @media (max-width: 653px) {
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
     }
   }
 
@@ -215,6 +214,7 @@ export const LanguageOptions = styled.div`
     font-size: 16px;
     justify-content: space-between;
     // margin-bottom : 20px;
+    margin-top: 0px;
   }
   @media (max-width: 375px) {
     margin-top: 10px;
@@ -371,7 +371,7 @@ export const TopContainerMR = styled.div`
     p {
       position: relative;
       margin-left: 0;
-      margin-top: 30px;
+      // margin-top: 30px;
       font-size: 16px;
     }
   }
@@ -483,7 +483,6 @@ export const MiddleContainerDiv = styled(Link)`
   }
 
   @media (max-width: 653px) {
-    height: 80%;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -663,7 +662,6 @@ export const RightContainerDiv = styled(Link)`
   }
 
   @media (max-width: 653px) {
-    height: 20%;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;

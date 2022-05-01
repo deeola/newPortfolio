@@ -23,7 +23,7 @@ const RightContainer = () => {
     <RightContainerDiv to='/about'>
       <ProjectContainer>
         <TopContainerMR>
-          <EmptyAnimatedDiv></EmptyAnimatedDiv>
+          {/* <EmptyAnimatedDiv /> */}
           <p> {translate('more')}</p>
         </TopContainerMR>
         <BottomContainer>{translate('about')}</BottomContainer>

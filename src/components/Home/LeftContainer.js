@@ -41,7 +41,7 @@ const LeftContainer = () => {
           <MyAboutMobile>{translate("aboutmobile")}</MyAboutMobile>
         </TextContainer>
         <LanguageOptions>
-          <EmptyDiv />
+          {/* <EmptyDiv /> */}
           <Languages>
             <LanguageDiv>
               <img src={flag} alt="flag" />

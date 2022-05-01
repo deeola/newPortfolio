@@ -15,7 +15,7 @@ const MiddleContainer = () => {
     <MiddleContainerDiv to='projects'>
       <ProjectContainer>
         <TopContainerMR>
-          <EmptyAnimatedDiv></EmptyAnimatedDiv>
+          {/* <EmptyAnimatedDiv /> */}
           <p> {translate('sample')}</p>
         </TopContainerMR>
         <BottomContainer> {translate('project')}</BottomContainer>
