@@ -8,7 +8,6 @@ import {
   SkillTitle,
   Skills,
   Skill,
-  SkillWrapper,
 } from "./AboutStyling";
 
 const LeftAbout = () => {
@@ -19,26 +18,19 @@ const LeftAbout = () => {
         <Header>{translate('aboutme')}</Header>
         <SkillTitle>{translate('languages')}</SkillTitle>
         <Skills>
-          <SkillWrapper>
             <Skill>HTML</Skill>
             <Skill>CSS</Skill>
             <Skill>JAVASCRIPT</Skill>
-          </SkillWrapper>
-          <SkillWrapper>
             <Skill>REACT</Skill>
             <Skill>TYPESCRIPT</Skill>
             <Skill>STORYBOOK</Skill>
-          </SkillWrapper>
-          <SkillWrapper>
             <Skill>SCSS</Skill>
             <Skill>GSAP</Skill>
             <Skill>PYTHON</Skill>
-          </SkillWrapper>
-          <SkillWrapper>
             <Skill>LOKI</Skill>
             <Skill>JQUERY</Skill>
-            <Skill>STYLED COMPONENTS</Skill>
-          </SkillWrapper>
+            <Skill>S.COMPONENTS</Skill>
+
         </Skills>
       </HeaderSkills>
     </LeftContainer>

@@ -23,7 +23,7 @@ export default {
     'languages' : 'Languages and Frameworks',
     'aboutmessage' : "Hello, My name is Adeola Bamigboye, and I'm a passionate front-end web developer who loves using web technologies to build stuff. The thing I enjoy most about web dev is the constant opportunity to solve problems. I try to better myself every time I open VS code and contribute to open-source projects to push myself. I would love to hear from you. Please feel free to contact me for projects, job opportunities or even collaborations.",
     'tools' : 'Some of the Managament processes and Deployment Tools that I use',
-    'opensource' : 'Click Here is the link to some open source projects that i have contributed to.',
+    'opensource' : 'Click Here to see some open source projects that i have contributed to.',
     'techused' : 'Technologies Used',
     'next': 'Next Project',
     'prev' : 'Previous Project',
