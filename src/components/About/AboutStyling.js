@@ -110,7 +110,8 @@ export const Skills = styled.div`
   }
 
   @media (max-width: 375px) {
-    margin: 7px 0px;
+    margin: 7px 0px;  
+   
   }
 
   //GALAXY-FOLD
@@ -203,11 +204,12 @@ export const TextWrapper = styled.p`
 
   @media (max-width: 653px) {
 
-    line-height: 26px;
+    line-height: unset;
+    font-size:15px;
   }
 
   @media (max-width: 375px) {
-    line-height: unset;
+
     font-size: 12px;
   }
 
@@ -279,6 +281,10 @@ export const Tool = styled.p`
   width: 100%;
   text-align: center;
   font-size: 12px;
+ 
+  @media (max-width: 653px) {
+   
+  }
 
   @media (max-width: 375px) {
     padding: 10px 5px;
