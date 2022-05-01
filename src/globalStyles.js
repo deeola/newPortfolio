@@ -21,8 +21,18 @@ html, body {
   overflow:hidden;
     margin:0;
     padding:0;
+    
     /*Avoid flicker on slides transitions for mobile phones #336 */
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+ }
+
+ html{
+  height: -webkit-fill-available;
+ }
+
+ body{
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
  }
 `;
 

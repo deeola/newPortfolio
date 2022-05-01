@@ -10,6 +10,8 @@ export const HomeContainer = styled.div`
   position: relative;
   @media (max-width: 653px) {
     flex-direction: column;
+    min-height: 100vh;
+  min-height: -webkit-fill-available;
   }
 `;
 
