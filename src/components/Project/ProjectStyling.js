@@ -38,12 +38,9 @@ export const LeftContainer = styled.div`
   @media (max-width: 653px) {
     width: 100%;
     height: 50%;
-    justify-content: unset;
-  }
-
-  @media (max-width: 400px) {
     justify-content: space-between;
   }
+
 
   //GALAXY-FOLD
   @media (max-width: 285px) {
@@ -121,7 +118,7 @@ export const TechUsed = styled.p`
   color: #5390d9;
   margin-bottom: 10px;
 
-  @media (max-width: 400px) {
+  @media (max-width: 653px) {
     display : none; 
     
    }
@@ -141,12 +138,9 @@ export const TechnologyUsed = styled.div`
 
   @media (max-width: 653px) {
     
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display : none;
   }
 
-  @media (max-width: 400px) {
-    display : none; 
-   }
 
 
   
@@ -167,12 +161,10 @@ export const Tech = styled.p`
   }
 
   @media (max-width: 653px) {
-    font-size : 12px;
+ 
+    display : none;
   }
 
-  @media (max-width: 375px) {
-    padding: 0px;
-  }
 
  
 `;
