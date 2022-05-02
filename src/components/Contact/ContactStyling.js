@@ -248,11 +248,15 @@ padding: 7px;
 height : 40px;
 
 @media (max-width: 653px) {
+  
 
 }
 
 @media (max-width: 375px) {
- 
+
+  &:focus ${ContactSubText} {
+    display : none;
+   }
 }
 
 `
