@@ -14,7 +14,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fab, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import translate from "../../i18nProvider/translate";
-import LoadingScreen from "../Shared/LoadingScreen";
+
 
 library.add(fab);
 

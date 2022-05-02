@@ -5,7 +5,6 @@ import Form from './Form'
 const RightContact = () => {
   return (
     <RightContainer>
-
       <Form />
     </RightContainer>
   )

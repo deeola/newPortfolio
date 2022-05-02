@@ -31,8 +31,8 @@ const Form = () => {
       <FormWrapper  onSubmit={handleSubmits} noValidate>
         <FormControl>
           <LabelError>
-            <Label htmlFor="namr">{translate('name')}</Label>
-            {errors.name && <ErrorMessage>{errors.name}</ErrorMessage>}
+            <Label htmlFor="names">{translate('name')}</Label>
+            {errors.names && <ErrorMessage>{errors.names}</ErrorMessage>}
           </LabelError>
           <FormInput
             onChange={handleChange}

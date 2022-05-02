@@ -6,9 +6,7 @@ import styled from 'styled-components';
 export const ContactContainer = styled.div`
 display: flex;
 width: 100%;
-justify-content: space-between;
 position: relative;
-
 @media (max-width: 843px) {
 
 }
@@ -16,6 +14,7 @@ position: relative;
 @media (max-width: 653px) {
 
   flex-direction:column;
+ 
 
 }
 
@@ -44,6 +43,7 @@ export const LeftContainer = styled.div`
   @media (max-width: 653px) {
     width: 100%;
     height:40%;
+    justify-content: unset;
   }
 
   @media (max-width: 375px) {
@@ -58,18 +58,14 @@ export const LeftContainer = styled.div`
 
 
 export const SimpleContact = styled.div`
-width: 85%;
+ width: 85%;
   margin: 0px auto;
-  padding: 40px 0px;
+  padding: 2.5rem 0rem;
 
   @media (max-width: 653px) {
-
-    padding: 20px 0px;
-  }
-
-  @media (max-width: 375px) {
     padding: 0px 0px;
   }
+
 `
 
 export const ContactTitle = styled.h1`
@@ -94,13 +90,13 @@ margin: 30px 0px;
 color: white;
 
 @media (max-width: 843px) {
-
+  margin: 1rem 0rem; 
 }
 
 @media (max-width: 653px) {
 
-  margin: 20px 0px; 
-  font-size: 15px;  
+  margin: 10px 0px 0px 0px; 
+  font-size: 14px;  
 
 }
 
@@ -164,10 +160,9 @@ export const RightContainer = styled.div`
 
   @media (max-width: 653px) {
     width: 100%;
-    height :70%;
+    height :60%;
     border-bottom: 5px solid #5390d9;
- 
-  
+
   }
 
   @media (max-width: 375px) {
@@ -181,6 +176,8 @@ export const RightContainer = styled.div`
 `;
 
 export const GeneralFormWrapper = styled.div`
+
+width : 50%;
 @media (max-width: 843px) {
   width : 90%;
   margin : auto;
@@ -196,7 +193,7 @@ export const GeneralFormWrapper = styled.div`
 
 
 export const FormWrapper = styled.form`
-
+width: 100%;
 `
 
 export const LabelError = styled.div`
@@ -243,33 +240,33 @@ width: 100%;
 
 export const FormInput = styled.input`
 width: 100%;
-height: 40px;
 border-radius: 5px; 
 outline: none;
 border: 1px solid  #386cab;
 margin-bottom: 10px;
 padding: 7px;
+height : 40px;
 
 @media (max-width: 653px) {
-  height: 40px;
+
 }
 
 @media (max-width: 375px) {
-  height: 30px;
+ 
 }
 
 `
 
 export const FormTextArea = styled.textarea`
 width: 100%;
-height: 70px;
 border-radius: 5px; 
 outline: none;
 border: 1px solid  #386cab;
 margin-bottom: 10px;
 padding: 7px;
+height : 80px;
 @media (max-width: 653px) {
-  height: 50px;
+
 }
 `
 
@@ -286,15 +283,15 @@ width:100%;
 `
 
 export const Button = styled.button`
-padding: 15px 40px;
 background-color: #386cab;
 color: white;
 outline:none;
 border: none;
 border-radius: 5px; 
-font-size: 20px;
 cursor: pointer;
 transition: 300ms ease-in;
+padding: 15px 20px;
+font-size : 16px; 
 
 &:hover{
     background-color: #5390d9;
@@ -307,7 +304,7 @@ transition: 300ms ease-in;
 }
 
 @media (max-width: 653px) {
-  padding: 15px 40px;
+
   font-size: 16px;
   width: 100%;
 }
