@@ -8,8 +8,14 @@ import {
   Image,
   ImageContainer,
   RightContainer,
+  Icon
 } from "./ProjectStyling";
-import translate from "../../i18nProvider/translate";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faCaretSquareLeft, faCaretSquareRight } from "@fortawesome/free-solid-svg-icons";
+library.add(faCaretSquareLeft, faCaretSquareRight)
+
+
+
 
 const RightProject = () => {
   const portfolioContext = useContext(PortfolioContext);
@@ -27,8 +33,9 @@ const RightProject = () => {
         )}
       </ImageContainer>
       <Buttons>
-        <Button onClick={setProjectNext}>{translate('next')}</Button>
-        <Button onClick={setProjectPrev}>{translate('prev')}</Button>
+        <Button onClick={setProjectPrev} icon={faCaretSquareLeft} />
+        <Button onClick={setProjectNext} icon={faCaretSquareRight} />
+        <Icon />
       </Buttons>
     </RightContainer>
   );

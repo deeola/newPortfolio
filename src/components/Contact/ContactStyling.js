@@ -43,7 +43,6 @@ export const LeftContainer = styled.div`
   @media (max-width: 653px) {
     width: 100%;
     height:40%;
-    justify-content: unset;
   }
 
   @media (max-width: 375px) {
@@ -186,8 +185,7 @@ width : 50%;
 
 @media (max-width: 653px) {
  margin : 0px auto;
-
-
+ display : none;
 }
 `
 

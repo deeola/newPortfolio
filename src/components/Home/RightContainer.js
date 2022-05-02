@@ -12,11 +12,9 @@ import {
   EmptyAnimatedDiv,
 } from "./Homestyling";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fab, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import translate from "../../i18nProvider/translate";
 
-
-library.add(fab);
 
 const RightContainer = () => {
   return (
