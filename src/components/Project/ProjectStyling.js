@@ -41,7 +41,7 @@ export const LeftContainer = styled.div`
     justify-content: unset;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 400px) {
     justify-content: space-between;
   }
 
@@ -121,7 +121,7 @@ export const TechUsed = styled.p`
   color: #5390d9;
   margin-bottom: 10px;
 
-  @media (max-width: 375px) {
+  @media (max-width: 400px) {
     display : none; 
     
    }
@@ -137,14 +137,19 @@ export const TechnologyUsed = styled.div`
    
   }
 
+
+
   @media (max-width: 653px) {
+    
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  @media (max-width: 380px) {
-   display : none; 
-   
-  }
+  @media (max-width: 400px) {
+    display : none; 
+   }
+
+
+  
 
   //GALAXY-FOLD
   @media (max-width: 285px) {
