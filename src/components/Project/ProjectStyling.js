@@ -141,7 +141,7 @@ export const TechnologyUsed = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 380px) {
    display : none; 
    
   }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useForm as Formik, ValidationError } from '@formspree/react';
+
 
 const useForm = (callback, validate) => {
   //GENERAL INITIAL VALUES FOR INPUT

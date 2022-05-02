@@ -1,6 +1,6 @@
 import React from "react";
-import { ColoredA, ColoredB, ColoredREC, LoadingImage, LoadingScreenContainer, TransA, TransB, TransREC } from "./NavbarStyled";
-import transparent from "../../assets/transparent.png";
+import { ColoredA, ColoredB, ColoredREC,  LoadingScreenContainer, TransA, TransB, TransREC } from "./NavbarStyled";
+
 
 const LoadingScreen = () => {
   return (

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import portfolioContext from "./portfolioContext";
 import AllProjects from "../components/Project/Allprojects";
 import { LOCALES } from "../i18nProvider";

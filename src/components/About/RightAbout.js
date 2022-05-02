@@ -7,7 +7,6 @@ import {
   TextManagementWrapper,
   TextWrapper,
   Tool,
-  Tools,
   ToolsTitle,
   ToolsWrapper,
 } from "./AboutStyling";
