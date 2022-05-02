@@ -1,4 +1,5 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef } from "react";
+import {gsap} from "gsap";
 import {
   CloseHam,
   HamContainer,
@@ -18,10 +19,21 @@ const NavLogo = () => {
   const { DisplayOpenIcon, DisplayCloseIcon, displayMenu, closeMenu } =
     profileContext;
 
-  
+    //Animation
+  //get refs
+
+  const logocont = useRef();
+
+  useEffect(() => {
+   
+    gsap.to(logocont.current, {
+      opacity: 1,
+      delay: 0.2,
+    });
+  }, []);
 
   return (
-    <LogoHamContainer>
+    <LogoHamContainer ref={logocont}>
       <LogoContainer to='/'>
         <img src={logo} alt="logo" />
       </LogoContainer>

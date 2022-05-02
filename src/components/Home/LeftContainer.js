@@ -1,4 +1,5 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef, useEffect } from "react";
+import { gsap } from "gsap";
 import {
   LeftContainerDiv,
   TextContainer,
@@ -10,7 +11,7 @@ import {
   Bottom,
   MyAboutMobile,
   Languages,
-  EmptyDivMobile 
+  EmptyDivMobile,
 } from "./Homestyling";
 
 import flag from "../../assets/icons/usaflag.png";
@@ -20,18 +21,37 @@ import PortfolioContext from "../../context/portfolioContext";
 import { LOCALES } from "../../i18nProvider";
 import translate from "../../i18nProvider/translate";
 
-
 const LeftContainer = () => {
   const portfolioContext = useContext(PortfolioContext);
   const { closeMenu, setLocale } = portfolioContext;
+
+  //Animation
+  //get refs
+
+  const leftcont = useRef();
+  const bottomref = useRef();
+
+  useEffect(() => {
+    gsap.from(leftcont.current, {
+      x: -90,
+      opacity: 1,
+      duration: 0.2,
+    });
+
+    gsap.to(bottomref.current, {
+      opacity: 1,
+      delay: 0.2,
+    });
+  }, []);
+
   return (
-    <LeftContainerDiv>
+    <LeftContainerDiv ref={leftcont}>
       <NavLogo />
-      
-      <Bottom onClick={closeMenu}>
+
+      <Bottom onClick={closeMenu} ref={bottomref}>
         <TextContainer>
           <MyName>
-            <h1>Adeola Bamigboye</h1>  
+            <h1>Adeola Bamigboye</h1>
           </MyName>
           <MyAbout>
             <p>
@@ -39,13 +59,12 @@ const LeftContainer = () => {
                 file: <span>frontend developer</span>,
               })}
             </p>
-           
           </MyAbout>
           <MyAboutMobile>{translate("aboutmobile")}</MyAboutMobile>
           <EmptyDivMobile />
         </TextContainer>
-        
-        <LanguageOptions>  
+
+        <LanguageOptions>
           <EmptyDiv />
           <Languages>
             <LanguageDiv>
@@ -64,4 +83,3 @@ const LeftContainer = () => {
 };
 
 export default LeftContainer;
-

@@ -1,4 +1,5 @@
-import React from "react";
+import React,{useRef, useEffect} from "react";
+import { gsap } from "gsap";
 import {
   BottomContainer,
   BottomMiddleContainer,
@@ -11,14 +12,33 @@ import {
 import translate from "../../i18nProvider/translate";
 
 const MiddleContainer = () => {
+   //get refs
+
+   const middlecont = useRef();
+   
+   const projectRef = useRef();
+ 
+ 
+   useEffect(() => {
+     gsap.to(middlecont.current, {
+       opacity: 1,
+       duration: 0.15,
+     });
+
+     gsap.to(projectRef.current, {
+      opacity: 1,
+      duration: 0.20,
+    });
+   
+   }, []);
   return (
-    <MiddleContainerDiv to='/projects'>
+    <MiddleContainerDiv to='/projects' ref={middlecont}>
       <ProjectContainer>
         <TopContainerMR>
-          <EmptyAnimatedDiv />
+          <EmptyAnimatedDiv  />
           <p> {translate('sample')}</p>
         </TopContainerMR>
-        <BottomContainer> {translate('project')}</BottomContainer>
+        <BottomContainer ref={projectRef}> {translate('project')}</BottomContainer>
       </ProjectContainer>
       <BottomMiddleContainer>
         <DownloadCV href="#">{translate('download')}</DownloadCV>

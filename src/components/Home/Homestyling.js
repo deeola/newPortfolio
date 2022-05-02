@@ -41,6 +41,7 @@ export const LeftContainerDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 
   @media (max-width: 843px) {
     width: 50%;
@@ -58,6 +59,7 @@ export const LeftContainerDiv = styled.div`
 `;
 
 export const LogoHamContainer = styled.div`
+opacity: 0;
   display: flex;
   width: 85%;
   margin: 0px auto;
@@ -361,6 +363,8 @@ export const Languages = styled.div`
 `;
 
 export const Bottom = styled.div`
+
+opacity: 0;
   @media (max-width: 843px) {
   }
 
@@ -452,8 +456,6 @@ export const EmptyAnimatedDiv = styled.div`
   background-color: white;
   visibility: hidden;
   transition: 1s ease-in-out;
-  animation: ${AnimateEmpty} 1s ease-in;
-
   @media (max-width: 843px) {
     display: none;
   }
@@ -463,6 +465,7 @@ export const BottomContainer = styled.h1`
   font-size: 70px;
   font-weight: 700;
   color: #5390d9;
+  opacity: 0;
 
   @media (max-width: 1056px) {
     font-size: 2.9rem;
@@ -485,6 +488,7 @@ export const BottomContainer = styled.h1`
 `;
 
 export const MiddleContainerDiv = styled(Link)`
+opacity:0;
   width: 50%;
   text-decoration: none;
   display: flex;
@@ -644,6 +648,7 @@ export const EmptyRightDiv = styled.div`
 `;
 
 export const RightContainerDiv = styled(Link)`
+opacity: 0;
   width: 50%;
   background-color: white;
   display: flex;

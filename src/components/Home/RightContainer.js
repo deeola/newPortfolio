@@ -1,4 +1,6 @@
-import React from "react";
+import React,{useRef, useEffect} from "react";
+
+import { gsap } from "gsap";
 
 
 import {
@@ -17,15 +19,31 @@ import translate from "../../i18nProvider/translate";
 
 
 const RightContainer = () => {
+  //get refs
+
+  const middlecont = useRef();
+  const aboutRef = useRef();
+ 
+  useEffect(() => {
+    gsap.to(middlecont.current, {
+      opacity: 1,
+      duration: 0.15,
+    });
+
+    gsap.to(aboutRef.current, {
+      opacity: 1,
+      duration: 0.25,
+    });
+  }, []);
   return (
-    <RightContainerDiv to='/about'>
+    <RightContainerDiv to='/about' ref={middlecont}>
       <ProjectContainer>
         <TopContainerMR>
           
           <EmptyAnimatedDiv />
           <p> {translate('more')}</p>
         </TopContainerMR>
-        <BottomContainer>{translate('about')}</BottomContainer>
+        <BottomContainer ref={aboutRef}>{translate('about')}</BottomContainer>
       </ProjectContainer>
       <BottomRightContainer>
         <EmptyRightDiv>
