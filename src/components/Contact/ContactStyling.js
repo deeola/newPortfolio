@@ -5,10 +5,27 @@ import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
 display: flex;
-height: 100vh;
 width: 100%;
 justify-content: space-between;
 position: relative;
+
+@media (max-width: 843px) {
+
+}
+
+@media (max-width: 653px) {
+
+  flex-direction:column;
+
+}
+
+@media (max-width: 375px) {
+
+}
+
+//GALAXY-FOLD
+@media (max-width: 285px) {
+}
 `;
 
 //Left Section
@@ -19,6 +36,24 @@ export const LeftContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: 1152px) {
+    width: 50%;
+  }
+
+  @media (max-width: 653px) {
+    width: 100%;
+    height:45%;
+  }
+
+  @media (max-width: 375px) {
+    height:40%;
+  }
+
+  //GALAXY-FOLD
+  @media (max-width: 285px) {
+  }
+  
 `;
 
 
@@ -26,17 +61,56 @@ export const SimpleContact = styled.div`
 width: 85%;
   margin: 0px auto;
   padding: 40px 0px;
+
+  @media (max-width: 653px) {
+
+    padding: 20px 0px;
+  }
+
+  @media (max-width: 375px) {
+    padding: 0px 0px;
+  }
 `
 
 export const ContactTitle = styled.h1`
 color: white;
 font-size: 40px;
+@media (max-width: 653px) {
+  font-size: 30px;
+}
+
+@media (max-width: 375px) {
+  font-size: 20px;
+}
+
+//GALAXY-FOLD
+@media (max-width: 285px) {
+}
 `
 
 
 export const ContactSubText = styled.p`
 margin: 30px 0px; 
 color: white;
+
+@media (max-width: 843px) {
+
+}
+
+@media (max-width: 653px) {
+
+
+
+}
+
+@media (max-width: 375px) {
+  margin: 10px 0px; 
+  font-size: 12px;  
+}
+
+//GALAXY-FOLD
+@media (max-width: 285px) {
+}
 `
 
 
@@ -48,6 +122,17 @@ p{
     color: white;
 
 }
+
+
+@media (max-width: 375px) {
+  margin: 10px 0px; 
+
+  p{
+    margin: 5px 0px;
+    font-size : 12px;
+  }
+}
+
 `
 
 
@@ -59,9 +144,43 @@ export const RightContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 1152px) {
+    width: 50%;
+
+  }
+
+  @media (max-width: 653px) {
+    width: 100%;
+    height :70%;
+    border-bottom: 5px solid #5390d9;
+ 
+  
+  }
+
+  @media (max-width: 375px) {
+    height :60%;
+  }
+
+  //GALAXY-FOLD
+  @media (max-width: 285px) {
+  
+  }
 `;
 
-export const GeneralFormWrapper = styled.div``
+export const GeneralFormWrapper = styled.div`
+@media (max-width: 843px) {
+  width : 90%;
+  margin : auto;
+}
+
+
+@media (max-width: 653px) {
+ margin : 0px auto;
+
+
+}
+`
 
 
 export const FormWrapper = styled.form`
@@ -73,6 +192,10 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 margin: 7px 0px;
+
+@media (max-width: 653px) {
+  margin: 5px 0px;
+}
 
 `
 
@@ -91,7 +214,13 @@ export const FormSuccess = styled.p`
 
 transition: 300ms ease-in;
 margin: 30px 0px;
+color: green;
+display : none;
 
+@media (max-width: 843px) {
+  margin: 10px 0px;
+  text-align : center;
+}
 `
 
 
@@ -108,6 +237,15 @@ outline: none;
 border: 1px solid  #386cab;
 margin-bottom: 10px;
 padding: 7px;
+
+@media (max-width: 653px) {
+  height: 40px;
+}
+
+@media (max-width: 375px) {
+  height: 30px;
+}
+
 `
 
 export const FormTextArea = styled.textarea`
@@ -118,6 +256,9 @@ outline: none;
 border: 1px solid  #386cab;
 margin-bottom: 10px;
 padding: 7px;
+@media (max-width: 653px) {
+  height: 50px;
+}
 `
 
 export const  ButtonControl  = styled.div`
@@ -125,6 +266,10 @@ display: flex;
 justify-content: center;
 align-item:center;
 width:100%;
+
+@media (max-width: 843px) {
+
+}
 
 `
 
@@ -144,6 +289,16 @@ transition: 300ms ease-in;
     
 }
 
+@media (max-width: 843px) {
+  width: 80%;
+  padding: 15px 10px;
+}
+
+@media (max-width: 653px) {
+  padding: 15px 40px;
+  font-size: 16px;
+  width: 100%;
+}
 `
 
 

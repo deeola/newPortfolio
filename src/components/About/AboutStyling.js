@@ -314,4 +314,7 @@ export const OpenSource = styled.a`
     font-size : 10px;
   }
 
+  //GALAXY-FOLD
+  @media (max-width: 285px) {
+  }
 `;
