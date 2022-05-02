@@ -1,4 +1,4 @@
-import React,{useRef, useEffect} from "react";
+import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import {
   BottomContainer,
@@ -12,36 +12,37 @@ import {
 import translate from "../../i18nProvider/translate";
 
 const MiddleContainer = () => {
-   //get refs
+  //get refs
 
-   const middlecont = useRef();
-   
-   const projectRef = useRef();
- 
- 
-   useEffect(() => {
-     gsap.to(middlecont.current, {
-       opacity: 1,
-       duration: 0.15,
-     });
+  const middlecont = useRef();
+  const projectRef = useRef();
 
-     gsap.to(projectRef.current, {
+  useEffect(() => {
+    gsap.to(middlecont.current, {
       opacity: 1,
-      duration: 0.20,
+      duration: 0.15,
     });
-   
-   }, []);
+
+    gsap.to(projectRef.current, {
+      opacity: 1,
+      duration: 0.2,
+    });
+  }, []);
+
   return (
-    <MiddleContainerDiv to='/projects' ref={middlecont}>
+    <MiddleContainerDiv to="/projects" ref={middlecont}>
       <ProjectContainer>
         <TopContainerMR>
-          <EmptyAnimatedDiv  />
-          <p> {translate('sample')}</p>
+          <EmptyAnimatedDiv />
+          <p> {translate("sample")}</p>
         </TopContainerMR>
-        <BottomContainer ref={projectRef}> {translate('project')}</BottomContainer>
+        <BottomContainer ref={projectRef}>
+          {" "}
+          {translate("project")}
+        </BottomContainer>
       </ProjectContainer>
       <BottomMiddleContainer>
-        <DownloadCV href="#">{translate('download')}</DownloadCV>
+        <DownloadCV href="#">{translate("download")}</DownloadCV>
       </BottomMiddleContainer>
     </MiddleContainerDiv>
   );

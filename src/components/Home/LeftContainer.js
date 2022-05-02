@@ -33,7 +33,7 @@ const LeftContainer = () => {
 
   useEffect(() => {
     gsap.from(leftcont.current, {
-      x: -90,
+      x: -120,
       opacity: 1,
       duration: 0.2,
     });
@@ -47,7 +47,6 @@ const LeftContainer = () => {
   return (
     <LeftContainerDiv ref={leftcont}>
       <NavLogo />
-
       <Bottom onClick={closeMenu} ref={bottomref}>
         <TextContainer>
           <MyName>
@@ -61,7 +60,7 @@ const LeftContainer = () => {
             </p>
           </MyAbout>
           <MyAboutMobile>{translate("aboutmobile")}</MyAboutMobile>
-          <EmptyDivMobile />
+          {/* <EmptyDivMobile /> */}
         </TextContainer>
 
         <LanguageOptions>

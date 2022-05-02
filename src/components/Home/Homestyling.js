@@ -442,12 +442,7 @@ export const TopContainerMR = styled.div`
   }
 `;
 
-const AnimateEmpty = keyframes`
-    0% {  height: 30%; }
-    100% { height: 100%}
 
-
-`;
 
 export const EmptyAnimatedDiv = styled.div`
   width: 2px;
