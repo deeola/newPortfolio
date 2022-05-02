@@ -43,7 +43,7 @@ export const LeftContainer = styled.div`
 
   @media (max-width: 653px) {
     width: 100%;
-    height:45%;
+    height:40%;
   }
 
   @media (max-width: 375px) {
@@ -99,7 +99,8 @@ color: white;
 
 @media (max-width: 653px) {
 
-
+  margin: 20px 0px; 
+  font-size: 15px;  
 
 }
 
@@ -123,6 +124,16 @@ p{
 
 }
 
+@media (max-width: 653px) {
+  margin: 20px 0px; 
+
+  p{
+    margin: 5px 0px;
+    
+  }
+}
+
+
 
 @media (max-width: 375px) {
   margin: 10px 0px; 
@@ -144,6 +155,7 @@ export const RightContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  background :white;
 
   @media (max-width: 1152px) {
     width: 50%;
