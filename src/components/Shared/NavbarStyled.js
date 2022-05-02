@@ -65,13 +65,12 @@ text-decoration: none;
 `
 
 export const LoadingScreenContainer = styled.div`
+
 display : flex;
 align-items: center;
 justify-content: center;
 width: 100%;
-height: 100vh;
-
-
+height: ${props => props.height } ;
 
 `
 

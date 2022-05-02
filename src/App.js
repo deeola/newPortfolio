@@ -35,9 +35,9 @@ function App() {
 
   return (
     <I18nPropvider locale={locale}>
-      <BrowserRouter basename={'/newPortfolio'}>
+      <BrowserRouter basename={'/'}>
         {loading ? (
-          <LoadingScreen />
+          <LoadingScreen height={'100vh'} colorprop={'black'} />
         ) : (
           <div className="App">
             <GlobalStyle />

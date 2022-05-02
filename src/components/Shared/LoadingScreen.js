@@ -2,9 +2,9 @@ import React from "react";
 import { ColoredA, ColoredB, ColoredREC,  LoadingScreenContainer, TransA, TransB, TransREC } from "./NavbarStyled";
 
 
-const LoadingScreen = () => {
+const LoadingScreen = ({height}) => {
   return (
-    <LoadingScreenContainer>
+    <LoadingScreenContainer height={height} >
       <svg
         width="112"
         height="117"
