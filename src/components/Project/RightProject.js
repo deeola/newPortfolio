@@ -7,12 +7,12 @@ import {
   Buttons,
   Image,
   ImageContainer,
-  RightContainer,
   Icon
 } from "./ProjectStyling";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faCaretSquareLeft, faCaretSquareRight } from "@fortawesome/free-solid-svg-icons";
 import LoadingScreen from "../Shared/LoadingScreen";
+import { SharedRightContainer } from "../Shared/SharedStyles";
 library.add(faCaretSquareLeft, faCaretSquareRight)
 
 
@@ -43,14 +43,14 @@ useEffect(() => {
   
 
   return (
-    <RightContainer>
+    <SharedRightContainer primary>
 
       {
         loading ? <LoadingScreen  height={'unset'}  /> : <ImageContainer>
         {AllProjects.map((project) =>
           project.key === currents + 1 ? 
           <div>
-                 : <Image key={uuidv4()} src={project.img} alt="img" />
+             <Image key={uuidv4()} src={project.img} alt="img" />
           </div>
             
             
@@ -67,13 +67,10 @@ useEffect(() => {
         <Button onClick={setProjectNext} icon={faCaretSquareRight} />
         <Icon />
       </Buttons>
-    </RightContainer>
+    </SharedRightContainer>
   );
 };
 
 export default RightProject;
-
-
-
 
 

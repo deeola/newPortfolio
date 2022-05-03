@@ -29,7 +29,7 @@ export const MiddleRightContainer = styled.div`
 
   //GALAXY-FOLD
   @media (max-width: 285px) {
-   height: 60%;
+    height: 60%;
   }
 `;
 
@@ -41,7 +41,6 @@ export const LeftContainerDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 
   @media (max-width: 843px) {
     width: 50%;
@@ -54,12 +53,12 @@ export const LeftContainerDiv = styled.div`
 
   //GALAXY-FOLD
   @media (max-width: 285px) {
-   height: 40%;
+    height: 40%;
   }
 `;
 
 export const LogoHamContainer = styled.div`
-opacity: 0;
+  opacity: 0;
   display: flex;
   width: 85%;
   margin: 0px auto;
@@ -190,7 +189,7 @@ export const MyAboutMobile = styled.p`
     color: #5390d9;
     text-align: left;
     font-size: 16px;
-    margin-bottom : 10px;
+    margin-bottom: 10px;
   }
 `;
 
@@ -223,10 +222,8 @@ export const LanguageOptions = styled.div`
   @media (max-width: 653px) {
     font-size: 16px;
     justify-content: space-between;
-    margin-bottom : 20px;
+    margin-bottom: 20px;
     margin-top: 0px;
-    
-    
   }
   @media (max-width: 375px) {
     margin-top: 10px;
@@ -252,38 +249,36 @@ const AnimateLineX = keyframes`
 `;
 
 export const EmptyDivMobile = styled.div`
-display : none;
+  display: none;
 
-@media (max-width: 653px) {
-  height: 1px;
-  width: 30%;
-  display : block;
-  position: relative;
-  &:before {
-    background: white;
-    position: absolute;
-    top: 0px;
-    left: -1px;
-    width: 100%;
-    height: 100%;
-    content: "";
-    z-index: 0;
-    box-shadow: none;
-    overflow: hidden;
-    animation: ${AnimateLineX} 2s 1;
-    -moz-animation: ${AnimateLineX} 2s 1;
-    -webkit-animation: ${AnimateLineX} 2s 1;
-    -o-animation: ${AnimateLineX} 2s 1;
-    animation-iteration-count: infinite;
-    border-left: 0px solid #ae2b24;
-    -webkit-transition: opacity 0.5s ease-out;
-    -moz-transition: opacity 0.5s ease-out;
-    -o-transition: opacity 0.5s ease-out;
-    transition: opacity 0.5s ease-out;
+  @media (max-width: 653px) {
+    height: 1px;
+    width: 30%;
+    display: block;
+    position: relative;
+    &:before {
+      background: white;
+      position: absolute;
+      top: 0px;
+      left: -1px;
+      width: 100%;
+      height: 100%;
+      content: "";
+      z-index: 0;
+      box-shadow: none;
+      overflow: hidden;
+      animation: ${AnimateLineX} 2s 1;
+      -moz-animation: ${AnimateLineX} 2s 1;
+      -webkit-animation: ${AnimateLineX} 2s 1;
+      -o-animation: ${AnimateLineX} 2s 1;
+      animation-iteration-count: infinite;
+      border-left: 0px solid #ae2b24;
+      -webkit-transition: opacity 0.5s ease-out;
+      -moz-transition: opacity 0.5s ease-out;
+      -o-transition: opacity 0.5s ease-out;
+      transition: opacity 0.5s ease-out;
+    }
   }
-}
-
-
 `;
 
 export const EmptyDiv = styled.div`
@@ -357,14 +352,13 @@ export const LanguageDiv = styled.div`
 export const Languages = styled.div`
   display: flex;
   @media (max-width: 653px) {
-  width : 60px;
-  justify-content:space-between;
+    width: 60px;
+    justify-content: space-between;
   }
 `;
 
 export const Bottom = styled.div`
-
-opacity: 0;
+  opacity: 0;
   @media (max-width: 843px) {
   }
 
@@ -419,7 +413,6 @@ export const TopContainerMR = styled.div`
     }
   }
 
-
   @media (max-width: 843px) {
     p {
       position: relative;
@@ -442,8 +435,6 @@ export const TopContainerMR = styled.div`
   }
 `;
 
-
-
 export const EmptyAnimatedDiv = styled.div`
   width: 2px;
   height: 100px;
@@ -456,11 +447,51 @@ export const EmptyAnimatedDiv = styled.div`
   }
 `;
 
+//show
+
+const show = keyframes`
+
+  93% {
+    color: transparent;
+  }
+  94% {
+    color:#5390d9;
+  }
+  100% {
+    color: white;
+  }
+
+`
+
+const texte = keyframes`
+0 {
+  content: 'PROJEKTES';
+}
+
+25% {
+  content: 'ARCFGKTES';
+}
+
+50% {
+  content: 'CQOZPXTSE';
+}
+
+75% {
+  content: 'KPLEESWTS';
+}
+100% {
+  content: '';
+}
+`
+
 export const BottomContainer = styled.h1`
+//former style
+
   font-size: 70px;
   font-weight: 700;
   color: #5390d9;
   opacity: 0;
+
 
   @media (max-width: 1056px) {
     font-size: 2.9rem;
@@ -483,7 +514,7 @@ export const BottomContainer = styled.h1`
 `;
 
 export const MiddleContainerDiv = styled(Link)`
-opacity:0;
+  opacity: 0;
   width: 50%;
   text-decoration: none;
   display: flex;
@@ -540,11 +571,11 @@ export const ProjectContainer = styled.div`
   width: 85%;
   margin: 0px auto;
   @media (max-width: 843px) {
-    margin-top:30px;
+    margin-top: 30px;
   }
 
   @media (max-width: 653px) {
-    margin-top:0px;
+    margin-top: 0px;
   }
 
   @media (max-width: 375px) {
@@ -643,7 +674,7 @@ export const EmptyRightDiv = styled.div`
 `;
 
 export const RightContainerDiv = styled(Link)`
-opacity: 0;
+  opacity: 0;
   width: 50%;
   background-color: white;
   display: flex;

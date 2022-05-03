@@ -29,31 +29,31 @@ position: relative;
 
 //Left Section
 
-export const LeftContainer = styled.div`
-  width: 33.3333333333%;
-  background-color: #293241;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+// export const LeftContainer = styled.div`
+//   width: 33.3333333333%;
+//   background-color: #293241;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
 
-  @media (max-width: 1152px) {
-    width: 50%;
-  }
+//   @media (max-width: 1152px) {
+//     width: 50%;
+//   }
 
-  @media (max-width: 653px) {
-    width: 100%;
-    height:40%;
-  }
+//   @media (max-width: 653px) {
+//     width: 100%;
+//     height:40%;
+//   }
 
-  @media (max-width: 375px) {
-    height:40%;
-  }
+//   @media (max-width: 375px) {
+//     height:40%;
+//   }
 
-  //GALAXY-FOLD
-  @media (max-width: 285px) {
-  }
+//   //GALAXY-FOLD
+//   @media (max-width: 285px) {
+//   }
   
-`;
+// `;
 
 
 export const SimpleContact = styled.div`
@@ -144,35 +144,6 @@ p{
 
 
 //Right Section
-
-export const RightContainer = styled.div`
-  width: 66.6666666666%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background :white;
-
-  @media (max-width: 1152px) {
-    width: 50%;
-
-  }
-
-  @media (max-width: 653px) {
-    width: 100%;
-    height :60%;
-    border-bottom: 5px solid #5390d9;
-
-  }
-
-  @media (max-width: 375px) {
-    height :60%;
-  }
-
-  //GALAXY-FOLD
-  @media (max-width: 285px) {
-  
-  }
-`;
 
 export const GeneralFormWrapper = styled.div`
 

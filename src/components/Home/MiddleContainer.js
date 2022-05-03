@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
+
 import {
   BottomContainer,
   BottomMiddleContainer,
@@ -10,6 +11,8 @@ import {
   TopContainerMR,
 } from "./Homestyling";
 import translate from "../../i18nProvider/translate";
+
+
 
 const MiddleContainer = () => {
   //get refs
@@ -27,6 +30,7 @@ const MiddleContainer = () => {
       opacity: 1,
       duration: 0.2,
     });
+
   }, []);
 
   return (

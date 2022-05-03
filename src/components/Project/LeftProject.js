@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import {
-  LeftContainer,
   NextPrevIcons,
   Icon,
   Procontainer,
@@ -24,6 +23,7 @@ import {
   faCaretSquareLeft,
   faCaretSquareRight,
 } from "@fortawesome/free-solid-svg-icons";
+import { SharedLeftContainer, Title } from "../Shared/SharedStyles";
 library.add(faCaretSquareLeft, faCaretSquareRight);
 
 const LeftProject = () => {
@@ -32,13 +32,13 @@ const LeftProject = () => {
     portfolioContext;
 
   return (
-    <LeftContainer>
+    <SharedLeftContainer primary>
       <NavLogo />
       <ProjectDetails>
         {AllProjects.map((project, key) =>
           project.key === currents + 1 ? (
             <Procontainer key={uuidv4()}>
-              <ProjectName>{project.name}</ProjectName>
+              <Title>{project.name}</Title>
               <ProjectDescription>
                 {locales === "en-US" ? project.desc.en : project.desc.de}
               </ProjectDescription>
@@ -66,8 +66,10 @@ const LeftProject = () => {
           <Icon onClick={setProjectNext} icon={faCaretSquareRight} />
         </NextPrevIcons>
       </ProjectDetails>
-    </LeftContainer>
+    </SharedLeftContainer>
   );
 };
 
 export default LeftProject;
+
+

@@ -34,9 +34,9 @@ html, body {
  body, .App, .App>div, #root{
   height: 100%;
   min-height: -webkit-fill-available;
-
-  
  }
+ 
+
  
 
 

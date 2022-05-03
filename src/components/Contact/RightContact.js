@@ -1,14 +1,17 @@
 import React from 'react'
-import {  RightContainer } from './ContactStyling'
+import { SharedRightContainer } from '../Shared/SharedStyles'
+
 import Form from './Form'
 
 const RightContact = () => {
   return (
-    <RightContainer>
+    <SharedRightContainer>
       <Form />
-    </RightContainer>
+    </SharedRightContainer>
   )
 }
 
 export default RightContact
+
+
 

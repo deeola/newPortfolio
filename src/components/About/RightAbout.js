@@ -1,9 +1,9 @@
 import React from "react";
 import translate from "../../i18nProvider/translate";
+import { SharedRightContainer } from "../Shared/SharedStyles";
 import {
   Management,
   OpenSource,
-  RightContainer,
   TextManagementWrapper,
   TextWrapper,
   Tool,
@@ -13,7 +13,7 @@ import {
 
 const RightAbout = () => {
   return (
-    <RightContainer>
+    <SharedRightContainer>
       <TextManagementWrapper>
         <TextWrapper>{translate("aboutmessage")}</TextWrapper>
         <Management>
@@ -35,8 +35,10 @@ const RightAbout = () => {
           {translate("opensource")}
         </OpenSource>
       </TextManagementWrapper>
-    </RightContainer>
+    </SharedRightContainer>
   );
 };
 
 export default RightAbout;
+
+

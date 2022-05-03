@@ -1,14 +1,15 @@
 import React from "react";
 import translate from "../../i18nProvider/translate";
 import NavLogo from "../Shared/NavLogo";
-import {  ContactDetails, ContactSubText, ContactTitle, LeftContainer, SimpleContact } from "./ContactStyling";
+import { SharedLeftContainer, Title } from "../Shared/SharedStyles";
+import {  ContactDetails, ContactSubText, ContactTitle, SimpleContact } from "./ContactStyling";
 
 const LeftContact = () => {
   return (
-    <LeftContainer>
+    <SharedLeftContainer>
       <NavLogo />
       <SimpleContact>
-        <ContactTitle>{translate('navcontact')}</ContactTitle>
+        <Title>{translate('navcontact')}</Title>
         <ContactSubText>
           {translate('question')}
         </ContactSubText>
@@ -18,11 +19,12 @@ const LeftContact = () => {
           <p>clazikar@gmail.com</p>
         </ContactDetails>
       </SimpleContact>
-    </LeftContainer>
+    </SharedLeftContainer>
   );
 };
 
 export default LeftContact;
+
 
 
 

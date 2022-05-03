@@ -24,28 +24,28 @@ export const ProjectContainer = styled.div`
 
 //Left Section
 
-export const LeftContainer = styled.div`
-  width: 33.3333333333%;
-  background-color: #293241;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+// export const LeftContainer = styled.div`
+//   width: 33.3333333333%;
+//   background-color: #293241;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
 
-  @media (max-width: 1152px) {
-    width: 50%;
-  }
+//   @media (max-width: 1152px) {
+//     width: 50%;
+//   }
 
-  @media (max-width: 653px) {
-    width: 100%;
-    height: 50%;
-    justify-content: space-between;
-  }
+//   @media (max-width: 653px) {
+//     width: 100%;
+//     height: 50%;
+//     justify-content: space-between;
+//   }
 
 
-  //GALAXY-FOLD
-  @media (max-width: 285px) {
-  }
-`;
+//   //GALAXY-FOLD
+//   @media (max-width: 285px) {
+//   }
+// `;
 
 export const ProjectDetails = styled.div`
   width: 85%;
@@ -232,32 +232,6 @@ export const Site = styled.a`
 `;
 
 //Right Project
-
-export const RightContainer = styled.div`
-  width: 66.6666666666%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  @media (max-width: 1152px) {
-    width: 50%;
-  }
-
-  @media (max-width: 653px) {
-    width: 100%;
-    height: 50%;
-    border-bottom: 5px solid #5390d9;
-  }
-
-  @media (max-width: 375px) {
-  
-  }
-
-  //GALAXY-FOLD
-  @media (max-width: 285px) {
-  }
-`;
 
 export const ImageContainer = styled.div`
   padding: 0px 50px;
