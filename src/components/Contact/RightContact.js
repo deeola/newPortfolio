@@ -5,7 +5,7 @@ import Form from './Form'
 
 const RightContact = () => {
   return (
-    <SharedRightContainer>
+    <SharedRightContainer primary>
       <Form />
     </SharedRightContainer>
   )
