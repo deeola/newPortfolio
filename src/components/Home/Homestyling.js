@@ -49,7 +49,7 @@ export const LeftContainerDiv = styled.div`
 
   @media (max-width: 653px) {
     width: 100%;
-    height: 30%;
+    height: 40%;
   }
 
   //GALAXY-FOLD
@@ -222,6 +222,8 @@ export const LanguageOptions = styled.div`
   display: flex;
   align-items: center;
   margin-top: 40px;
+  justify-content: space-between;
+
   @media (max-width: 843px) {
   }
   @media (max-width: 653px) {
@@ -324,7 +326,7 @@ export const EmptyDiv = styled.div`
 
 export const LanguageDiv = styled.div`
   display: flex;
-  margin-left: 40px;
+
 
   img {
     width: 30px;
@@ -333,6 +335,12 @@ export const LanguageDiv = styled.div`
   p {
     margin-left: 10px;
     color: white;
+    font-weight :700;
+    cursor:pointer;
+
+    &:hover{
+      color: #5390d9;
+    }
   }
 
   //Media Query
@@ -356,9 +364,9 @@ export const LanguageDiv = styled.div`
 
 export const Languages = styled.div`
   display: flex;
+  justify-content: space-between;
   @media (max-width: 653px) {
     width: 60px;
-    justify-content: space-between;
   }
 `;
 
@@ -453,42 +461,7 @@ export const EmptyAnimatedDiv = styled.div`
   }
 `;
 
-//show
 
-const show = keyframes`
-
-  93% {
-    color: transparent;
-  }
-  94% {
-    color:#5390d9;
-  }
-  100% {
-    color: white;
-  }
-
-`;
-
-const texte = keyframes`
-0 {
-  content: 'PROJEKTES';
-}
-
-25% {
-  content: 'ARCFGKTES';
-}
-
-50% {
-  content: 'CQOZPXTSE';
-}
-
-75% {
-  content: 'KPLEESWTS';
-}
-100% {
-  content: '';
-}
-`;
 
 export const BottomContainer = styled.h1`
   font-size: 70px;
@@ -666,7 +639,7 @@ export const NDownloadCV = styled.a`
 //RightContainer
 
 export const Icon = styled(FontAwesomeIcon)`
-  color: #386cab;
+  color: white;
   font-size: 30px;
   cursor: pointer;
   transition: 300ms ease-in;
@@ -674,6 +647,10 @@ export const Icon = styled(FontAwesomeIcon)`
     color: #5390d9;
   }
 `;
+
+export const IconLInk = styled.a`
+
+`
 
 export const EmptyRightDiv = styled.div`
   width: 35%;
@@ -758,8 +735,8 @@ export const RightContainerDiv = styled(Link)`
 `;
 
 export const BottomRightContainer = styled.div`
-  width: 85%;
-  margin: 0px auto;
+width :25%;
+justify-content: space-between;
   display: flex;
   align-items: right;
   position: relative;
@@ -768,7 +745,7 @@ export const BottomRightContainer = styled.div`
   }
 
   @media (max-width: 653px) {
-    display: none;
+
   }
 `;
 

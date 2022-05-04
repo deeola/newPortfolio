@@ -4,7 +4,6 @@ import NavLogo from "../Shared/NavLogo";
 import { SharedLeftContainer, Title } from "../Shared/SharedStyles";
 import gsap from "gsap";
 import {
-  Header,
   HeaderSkills,
   SkillTitle,
   Skills,

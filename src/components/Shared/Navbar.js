@@ -3,7 +3,7 @@ import { List, NavbarContainer, UnorderedList,ListContainer  } from "./NavbarSty
 import PortfolioContext from "../../context/portfolioContext";
 import translate from "../../i18nProvider/translate";
 import BlueNavLogo from "./BlueNavLogo";
-import { Bottom, NDownloadCV } from "../Home/Homestyling";
+import { NDownloadCV } from "../Home/Homestyling";
 import gsap from "gsap";
 
 const Navbar = () => {
@@ -44,27 +44,7 @@ useEffect(() => {
 
 },[])
 
-  // console.log(window.innerWidth)
 
-  // if(window.innerWidth > 843){
-    
-  // }
-
-  // if(window.innerWidth > 375 && !(window.innerWidth > 843)){
-  //   All.forEach((item) => {
-  //     gsap.from(item, {
-  //       duration: 1.8,
-  //       y: -100,
-  //       ease: "power4.out",
-  //       delay: 0.5,
-  //       skewY: 2,
-  //       position: "relative",
-  //       stagger: {
-  //         amount: 0.3,
-  //       },
-  //     });
-  //   });
-  // } 
 
 
 

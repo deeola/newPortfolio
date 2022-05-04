@@ -5,7 +5,6 @@ import {
   Procontainer,
   ProjectDescription,
   ProjectDetails,
-  ProjectName,
   Site,
   Tech,
   TechnologyUsed,

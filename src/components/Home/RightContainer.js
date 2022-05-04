@@ -12,8 +12,6 @@ import {
   Icon,
   EmptyRightDiv,
   EmptyAnimatedDiv,
-  MiddleOverlay,
-  OverlayPictureR,
 } from "./Homestyling";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";

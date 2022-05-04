@@ -2,7 +2,7 @@ import React,{useRef, useEffect, useContext} from "react";
 import translate from "../../i18nProvider/translate";
 import NavLogo from "../Shared/NavLogo";
 import { SharedLeftContainer, Title } from "../Shared/SharedStyles";
-import {  ContactDetails, ContactSubText, ContactTitle, SimpleContact } from "./ContactStyling";
+import {  ContactDetails, ContactSubText, SimpleContact } from "./ContactStyling";
 import PortfolioContext from "../../context/portfolioContext";
 import gsap from "gsap";
 

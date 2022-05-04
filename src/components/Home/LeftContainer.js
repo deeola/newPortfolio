@@ -12,6 +12,9 @@ import {
   MyAboutMobile,
   Languages,
   EmptyDivMobile,
+  BottomRightContainer,
+  Icon,
+  IconLInk,
 } from "./Homestyling";
 
 import flag from "../../assets/icons/usaflag.png";
@@ -20,7 +23,8 @@ import NavLogo from "../Shared/NavLogo";
 import PortfolioContext from "../../context/portfolioContext";
 import { LOCALES } from "../../i18nProvider";
 import translate from "../../i18nProvider/translate";
-import { getQueriesForElement } from "@testing-library/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const LeftContainer = () => {
   const portfolioContext = useContext(PortfolioContext);
@@ -45,13 +49,13 @@ const LeftContainer = () => {
     });
   }, []);
 
-  console.log(hamOpen)
+  console.log(hamOpen);
 
-  if(hamOpen){
+  if (hamOpen) {
     gsap.to(leftcont.current, {
       zIndex: 1,
-      duration :.1,
-      position : 'relative'
+      duration: 0.1,
+      position: "relative",
     });
   }
 
@@ -78,14 +82,20 @@ const LeftContainer = () => {
           <EmptyDiv />
           <Languages>
             <LanguageDiv>
-              <img src={flag} alt="flag" />
               <p onClick={() => setLocale(LOCALES.ENGLISH)}>EN</p>
             </LanguageDiv>
             <LanguageDiv>
-              <img src={germanflag} alt="flag" />
               <p onClick={() => setLocale(LOCALES.GERMAN)}>DE</p>
             </LanguageDiv>
           </Languages>
+          <BottomRightContainer>
+            <IconLInk href="https://github.com/deeola" target='_blank'>
+              <Icon icon={faGithub} />
+            </IconLInk>
+            <IconLInk href="https://www.linkedin.com/in/bamigboyeadeola/" target='_blank'>
+              <Icon icon={faLinkedin} />
+            </IconLInk>
+          </BottomRightContainer>
         </LanguageOptions>
       </Bottom>
     </LeftContainerDiv>
