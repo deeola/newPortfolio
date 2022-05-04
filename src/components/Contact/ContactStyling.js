@@ -87,6 +87,8 @@ font-size: 40px;
 export const ContactSubText = styled.p`
 margin: 30px 0px; 
 color: white;
+font-family: "Alegreya Sans", sans-serif;
+line-height 27px;
 
 @media (max-width: 843px) {
   margin: 1rem 0rem; 

@@ -69,4 +69,11 @@ export const Title = styled.h1`
   }
 `;
 
+export const Paragraph = styled.p`
+margin-top: 20px;
+font-family: "Alegreya Sans", sans-serif;
+line-height: 22px;
+color: ${props => props.primary ? 'white' : 'black'};
+`
+
 //Buttons

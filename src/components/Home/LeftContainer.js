@@ -67,14 +67,14 @@ const LeftContainer = () => {
           <MyName>
             <h1>Adeola Bamigboye</h1>
           </MyName>
-          <MyAbout>
-            <p>
+          <MyAbout primary>
+         
               {translate("hello-message", {
                 file: <span>frontend developer</span>,
               })}
-            </p>
+       
           </MyAbout>
-          <MyAboutMobile>{translate("aboutmobile")}</MyAboutMobile>
+          <MyAbout>{translate("aboutmobile")}</MyAbout>
           {/* <EmptyDivMobile /> */}
         </TextContainer>
 

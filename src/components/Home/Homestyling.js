@@ -179,40 +179,19 @@ export const MyName = styled.div`
   }
 `;
 
-export const MyAboutMobile = styled.p`
-  display: none;
-  font-family: "Alegreya Sans", sans-serif;
-  @media (max-width: 843px) {
-  }
 
-  @media (max-width: 653px) {
-    display: block;
-    margin-top: 5px;
-    color: #5390d9;
-    text-align: left;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-`;
-
-export const MyAbout = styled.div`
+export const MyAbout = styled.p`
   margin-top: 20px;
-  color: white;
-
-  p {
-    font-family: "Alegreya Sans", sans-serif;
-    line-height: 22px;
-    color: gray;
-    span {
-      color: #5390d9;
-    }
-  }
+  font-family: "Alegreya Sans", sans-serif;
+  line-height: 22px;
+  color: gray;
+  display: ${(prop) => (prop.primary ? "unset" : "none")};
 
   @media (max-width: 843px) {
   }
 
   @media (max-width: 653px) {
-    display: none;
+    display: ${(prop) => (prop.primary ? "none" : "unset")};
   }
 `;
 
@@ -327,7 +306,6 @@ export const EmptyDiv = styled.div`
 export const LanguageDiv = styled.div`
   display: flex;
 
-
   img {
     width: 30px;
   }
@@ -335,10 +313,10 @@ export const LanguageDiv = styled.div`
   p {
     margin-left: 10px;
     color: white;
-    font-weight :700;
-    cursor:pointer;
+    font-weight: 700;
+    cursor: pointer;
 
-    &:hover{
+    &:hover {
       color: #5390d9;
     }
   }
@@ -461,8 +439,6 @@ export const EmptyAnimatedDiv = styled.div`
   }
 `;
 
-
-
 export const BottomContainer = styled.h1`
   font-size: 70px;
   font-weight: 700;
@@ -505,13 +481,9 @@ export const DownloadCV = styled.a`
   &:hover {
     background-color: #386cab;
     border: none;
-    z-index : 2;
+    z-index: 2;
   }
-
-  
-
 `;
-
 
 export const MiddleContainerDiv = styled(Link)`
   opacity: 0;
@@ -540,10 +512,9 @@ export const MiddleContainerDiv = styled(Link)`
   }
 
   &:hover ${DownloadCV} {
-    background:yellow;
+    background: yellow;
     z-index: 200 !important;
   }
-
 
   &:hover ${TopContainerMR} {
     p {
@@ -574,7 +545,6 @@ export const MiddleContainerDiv = styled(Link)`
   @media (max-width: 375px) {
   }
 `;
-
 
 export const ProjectContainer = styled.div`
   width: 85%;
@@ -648,9 +618,7 @@ export const Icon = styled(FontAwesomeIcon)`
   }
 `;
 
-export const IconLInk = styled.a`
-
-`
+export const IconLInk = styled.a``;
 
 export const EmptyRightDiv = styled.div`
   width: 35%;
@@ -735,8 +703,8 @@ export const RightContainerDiv = styled(Link)`
 `;
 
 export const BottomRightContainer = styled.div`
-width :25%;
-justify-content: space-between;
+  width: 25%;
+  justify-content: space-between;
   display: flex;
   align-items: right;
   position: relative;
@@ -745,45 +713,32 @@ justify-content: space-between;
   }
 
   @media (max-width: 653px) {
-
   }
 `;
 
-
 export const MiddleOverlay = styled.div`
+  height: 40%;
 
-height: 40%;
-
-// background:purple;
-position: relative;
-
-
-`
-
+  // background:purple;
+  position: relative;
+`;
 
 export const OverlayPicture = styled.svg`
+  position: absolute;
+  right: 0;
+  bottom: 0;
 
-
-position : absolute;
-right: 0;
-bottom:0;
-
-background:red;
-`
+  background: red;
+`;
 export const Group = styled.g`
-background: blue;
-display:flex;
-align-self: right;
-margin-left: 500px;
-
-`
-
+  background: blue;
+  display: flex;
+  align-self: right;
+  margin-left: 500px;
+`;
 
 export const OverlayPictureR = styled.img`
-position: absolute;
-left: 0;
-top: 0;
-
-
-
-`
+  position: absolute;
+  left: 0;
+  top: 0;
+`;

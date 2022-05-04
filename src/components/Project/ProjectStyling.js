@@ -93,6 +93,9 @@ export const ProjectName = styled.h1`
 export const ProjectDescription = styled.p`
   color: white;
   margin: 30px 0px;
+  font-family: "Alegreya Sans", sans-serif;
+  line-height: 23px;
+  font-weight: 400;
   @media (max-width: 1152px) {
    
   }
@@ -115,9 +118,9 @@ export const ProjectDescription = styled.p`
 `;
 
 export const TechUsed = styled.p`
-  color: #5390d9;
+  color: white;
   margin-bottom: 10px;
-
+  font-family: "Alegreya Sans", sans-serif;
   @media (max-width: 653px) {
     display : none; 
     
@@ -156,6 +159,7 @@ export const Tech = styled.p`
   padding: 5px;
   text-align: center;
   text-transform: uppercase;
+  font-family: "Alegreya Sans", sans-serif;
   @media (max-width: 1152px) {
    
   }
@@ -276,8 +280,8 @@ export const Button = styled(FontAwesomeIcon)`
   font-size: 50px;
 
   &: hover {
-    background-color: #5390d9;
-    color: white;
+ 
+    color: #1B3766;
   }
 
   @media (max-width: 843px) {
