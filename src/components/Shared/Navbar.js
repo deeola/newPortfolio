@@ -1,28 +1,115 @@
-import React,{useContext} from "react";
-import { List, NavbarContainer, UnorderedList } from "./NavbarStyled";
+import React, { useContext, useRef, useEffect } from "react";
+import { List, NavbarContainer, UnorderedList,ListContainer  } from "./NavbarStyled";
 import PortfolioContext from "../../context/portfolioContext";
 import translate from "../../i18nProvider/translate";
 import BlueNavLogo from "./BlueNavLogo";
-import { NDownloadCV } from "../Home/Homestyling";
-
+import { Bottom, NDownloadCV } from "../Home/Homestyling";
+import gsap from "gsap";
 
 const Navbar = () => {
-    const portfolioContext = useContext(PortfolioContext);
-    const { ulDisplay,closeMenu } = portfolioContext;
+  const portfolioContext = useContext(PortfolioContext);
+  const { ulDisplay, closeMenu, hamOpen } = portfolioContext;
+
+  // const styling
+
+
+
+  const navcontainer = useRef();
+  const homeli = useRef();
+  const aboutli = useRef();
+  const contactli = useRef();
+  const projectli = useRef();
+
+  const All = [
+    homeli.current,
+    aboutli.current,
+    contactli.current,
+    projectli.current,
+  ];
+
+  // useEffect(() => {
+
+  // },[hamOpen])
+
+  console.log(window.innerWidth)
+
+  if(window.innerWidth > 843){
+    All.forEach((item) => {
+      gsap.from(item, {
+        duration: 1.8,
+        y: 100,
+        ease: "power4.out",
+        delay: 0.5,
+        skewY: 7,
+        stagger: {
+          amount: 0.3,
+        },
+      });
+    });
+  }
+
+  if(window.innerWidth > 375 && !(window.innerWidth > 843)){
+    All.forEach((item) => {
+      gsap.from(item, {
+        duration: 1.8,
+        y: -100,
+        ease: "power4.out",
+        delay: 0.5,
+        skewY: 2,
+        position: "relative",
+        stagger: {
+          amount: 0.3,
+        },
+      });
+    });
+  } 
+
+
+
+  let tween = gsap.fromTo(
+    navcontainer.current,
+    {
+      duration: 2,
+      x: -700,
+    },
+    {
+      background: "white",
+      x: 0,
+    }
+  );
+
+  if (hamOpen) {
+    tween.play();
+  }
+
   return (
-    <NavbarContainer style={ulDisplay()}>
-      <BlueNavLogo  />
+    <NavbarContainer ref={navcontainer} style={ulDisplay()}>
+      <BlueNavLogo />
       <UnorderedList>
-        <List onClick={closeMenu} to='/'>{translate('navhome')}</List>
-        <List onClick={closeMenu}  to='/projects'>{translate('navproject')}</List>
-        <List onClick={closeMenu}  to='/about'>{translate('navabout')}</List>
-        <List onClick={closeMenu}  to='/contact'>{translate('navcontact')}</List> 
+        <ListContainer >
+          <List ref={homeli} onClick={closeMenu} to="/">
+            {translate("navhome")}
+          </List>
+        </ListContainer>
+        <ListContainer >
+          <List ref={projectli} onClick={closeMenu} to="/projects">
+            {translate("navproject")}
+          </List>
+        </ListContainer>
+        <ListContainer >
+          <List ref={aboutli} onClick={closeMenu} to="/about">
+            {translate("navabout")}
+          </List>
+        </ListContainer>
+        <ListContainer  >
+          <List ref={contactli} onClick={closeMenu} to="/contact">
+            {translate("navcontact")}
+          </List>
+        </ListContainer>
       </UnorderedList>
-      <NDownloadCV>{translate('download')}</NDownloadCV>
+      <NDownloadCV>{translate("download")}</NDownloadCV>
     </NavbarContainer>
   );
 };
 
 export default Navbar;
-
-

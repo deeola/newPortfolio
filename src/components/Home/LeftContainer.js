@@ -20,10 +20,11 @@ import NavLogo from "../Shared/NavLogo";
 import PortfolioContext from "../../context/portfolioContext";
 import { LOCALES } from "../../i18nProvider";
 import translate from "../../i18nProvider/translate";
+import { getQueriesForElement } from "@testing-library/react";
 
 const LeftContainer = () => {
   const portfolioContext = useContext(PortfolioContext);
-  const { closeMenu, setLocale } = portfolioContext;
+  const { closeMenu, setLocale, hamOpen } = portfolioContext;
 
   //Animation
   //get refs
@@ -43,6 +44,16 @@ const LeftContainer = () => {
       delay: 0.2,
     });
   }, []);
+
+  console.log(hamOpen)
+
+  if(hamOpen){
+    gsap.to(leftcont.current, {
+      zIndex: 1,
+      duration :.1,
+      position : 'relative'
+    });
+  }
 
   return (
     <LeftContainerDiv ref={leftcont}>

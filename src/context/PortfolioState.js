@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import portfolioContext from "./portfolioContext";
 import AllProjects from "../components/Project/Allprojects";
 import { LOCALES } from "../i18nProvider";
+import gsap from "gsap";
 const PortfolioState = (props) => {
   // Navigation
 
@@ -23,6 +24,8 @@ const PortfolioState = (props) => {
     return openIcon ? { display: "none" } : { display: "block" };
   };
 
+  
+
   //MENU STYLE
   const displayMenu = () => {
     setHamOpen(true);
@@ -31,9 +34,10 @@ const PortfolioState = (props) => {
   };
 
   const closeMenu = () => {
-    setHamOpen(false);
+    setHamOpen(false);  
     setCloseIcon(false);
     setOpenIcon(false);
+   
   };
 
   //LOADING
@@ -73,7 +77,6 @@ const PortfolioState = (props) => {
 
   const [locale, setLocale] = useState(LOCALES.ENGLISH);
 
-
   return (
     <portfolioContext.Provider
       value={{
@@ -92,7 +95,6 @@ const PortfolioState = (props) => {
         setProjectPrev,
         locale,
         setLocale,
-        
       }}
     >
       {props.children}

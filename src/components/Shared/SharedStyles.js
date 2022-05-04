@@ -54,6 +54,7 @@ export const SharedLeftContainer = styled.div`
 export const Title = styled.h1`
   color: white;
   font-size: 40px;
+  font-family: 'Exo 2', sans-serif;
 
   @media (max-width: 653px) {
     font-size: 30px;

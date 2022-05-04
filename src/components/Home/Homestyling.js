@@ -16,6 +16,7 @@ export const HomeContainer = styled.div`
 export const MiddleRightContainer = styled.div`
   display: flex;
   width: 66.6666666666%;
+  position: relative;
 
   @media (max-width: 843px) {
     width: 50%;
@@ -154,6 +155,7 @@ export const TextContainer = styled.div`
 
 export const MyName = styled.div`
   color: white;
+  font-family: "Exo 2", sans-serif;
 
   h1 {
     font-size: 3rem;
@@ -179,7 +181,7 @@ export const MyName = styled.div`
 
 export const MyAboutMobile = styled.p`
   display: none;
-
+  font-family: "Alegreya Sans", sans-serif;
   @media (max-width: 843px) {
   }
 
@@ -196,8 +198,11 @@ export const MyAboutMobile = styled.p`
 export const MyAbout = styled.div`
   margin-top: 20px;
   color: white;
+
   p {
-    line-height: 25px;
+    font-family: "Alegreya Sans", sans-serif;
+    line-height: 22px;
+    color: gray;
     span {
       color: #5390d9;
     }
@@ -406,6 +411,7 @@ export const TopContainerMR = styled.div`
     position: absolute;
     bottom: 0;
     transition: 1s ease-in-out;
+    font-family: "Exo 2", sans-serif;
   }
   @media (max-width: 1056px) {
     p {
@@ -461,7 +467,7 @@ const show = keyframes`
     color: white;
   }
 
-`
+`;
 
 const texte = keyframes`
 0 {
@@ -482,16 +488,14 @@ const texte = keyframes`
 100% {
   content: '';
 }
-`
+`;
 
 export const BottomContainer = styled.h1`
-//former style
-
   font-size: 70px;
   font-weight: 700;
   color: #5390d9;
   opacity: 0;
-
+  font-family: "Exo 2", sans-serif;
 
   @media (max-width: 1056px) {
     font-size: 2.9rem;
@@ -513,6 +517,29 @@ export const BottomContainer = styled.h1`
   }
 `;
 
+export const DownloadCV = styled.a`
+  color: white;
+  background-color: none;
+  border: 1px solid white;
+  padding: 15px 15px;
+  text-decoration: none;
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+  transition: 300ms ease-in;
+  font-family: "Alegreya Sans", sans-serif;
+
+  &:hover {
+    background-color: #386cab;
+    border: none;
+    z-index : 2;
+  }
+
+  
+
+`;
+
+
 export const MiddleContainerDiv = styled(Link)`
   opacity: 0;
   width: 50%;
@@ -523,6 +550,8 @@ export const MiddleContainerDiv = styled(Link)`
   background-color: #386cab;
   cursor: pointer;
   transition: 300ms ease-in;
+  position: relative;
+
   &:hover {
     background-color: #5390d9;
   }
@@ -536,6 +565,12 @@ export const MiddleContainerDiv = styled(Link)`
       color: white;
     }
   }
+
+  &:hover ${DownloadCV} {
+    background:yellow;
+    z-index: 200 !important;
+  }
+
 
   &:hover ${TopContainerMR} {
     p {
@@ -567,6 +602,7 @@ export const MiddleContainerDiv = styled(Link)`
   }
 `;
 
+
 export const ProjectContainer = styled.div`
   width: 85%;
   margin: 0px auto;
@@ -588,7 +624,7 @@ export const BottomMiddleContainer = styled.div`
   margin-bottom: 36px;
   display: flex;
   align-items: right;
-  position: relative;
+  // position: relative;
 
   @media (max-width: 843px) {
   }
@@ -598,24 +634,6 @@ export const BottomMiddleContainer = styled.div`
   }
 
   @media (max-width: 375px) {
-  }
-`;
-
-export const DownloadCV = styled.a`
-  color: white;
-  background-color: none;
-  border: 1px solid white;
-  padding: 15px 15px;
-  text-decoration: none;
-  position: absolute;
-  right: 0;
-  bottom: 5px;
-  transition: 300ms ease-in;
-  z-index: 2;
-
-  &:hover {
-    background-color: #386cab;
-    border: none;
   }
 `;
 
@@ -753,3 +771,42 @@ export const BottomRightContainer = styled.div`
     display: none;
   }
 `;
+
+
+export const MiddleOverlay = styled.div`
+
+height: 40%;
+
+// background:purple;
+position: relative;
+
+
+`
+
+
+export const OverlayPicture = styled.svg`
+
+
+position : absolute;
+right: 0;
+bottom:0;
+
+background:red;
+`
+export const Group = styled.g`
+background: blue;
+display:flex;
+align-self: right;
+margin-left: 500px;
+
+`
+
+
+export const OverlayPictureR = styled.img`
+position: absolute;
+left: 0;
+top: 0;
+
+
+
+`

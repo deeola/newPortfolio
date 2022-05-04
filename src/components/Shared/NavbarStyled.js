@@ -2,17 +2,16 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { keyframes } from "styled-components";
 
-
 export const NavbarContainer = styled.div`
-width: 66.6666666667%;
-background-color: white;
-margin: auto 0px auto auto;
-position: absolute;
-top: 0;
-right: 0;
-height: 100vh;
-padding: 140px;
-@media (max-width: 843px) {
+  width: 66.6666666667%;
+  background-color: white;
+  margin: auto 0px auto auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  padding: 140px;
+  @media (max-width: 843px) {
     width: 50%;
     padding: 40px;
     padding-top: 200px;
@@ -21,58 +20,89 @@ padding: 140px;
   @media (max-width: 653px) {
     width: 100%;
     padding: 20px;
-
+    z-index: 2;
   }
 
   @media (max-width: 375px) {
   }
-`
+`;
 
 export const UnorderedList = styled.ul`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
-width: 100%;
-display: flex;
-flex-direction: column;
-
-@media (max-width: 653px) {
-   text-align: right;
-   margin-top : 70px;
-
+  @media (max-width: 653px) {
+    text-align: right;
+    margin-top: 70px;
   }
 
   //GALAXY-FOLD
   @media (max-width: 285px) {
-    margin-top : 50px;
+    margin-top: 50px;
+  }
+`;
+
+export const ListContainer = styled.div`
+  width: 100%;
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: 843px) {
+    height: 100px;
   }
 
-`
+  @media (max-width: 653px) {
+    
+height : unset;
+  }
+
+  @media (max-width: 375px) {
+  }
+
+`;
+
 
 export const List = styled(Link)`
+  // color:  #5390d9;
+  // list-style: none;
+  // font-size: 50px;
+  // font-weight: 800;
+  // cursor: pointer;
+  // margin-bottom: 5px;
+  // text-decoration: none;
 
-color:  #5390d9;
-list-style: none;
-font-size: 50px;
-font-weight: 800;
-cursor: pointer;
-margin-bottom: 5px;
-text-decoration: none;
+  //Animation styled
 
-//GALAXY-FOLD
+  font-weight: 800;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+  color: #5390d9;
+  position: absolute;
+
+  @media (max-width: 653px) {
+    
+   position: relative;
+  }
+
+
+  //GALAXY-FOLD
   @media (max-width: 285px) {
     font-size: 40px;
   }
-
-`
+`;
 
 export const LoadingScreenContainer = styled.div`
-
-display : flex;
-align-items: center;
-justify-content: center;
-width: 100%;
-height: ${props => props.height } ;
-
-`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: ${(props) => props.height};
+`;
 
 //Keyframes
 
@@ -86,7 +116,7 @@ to{
   transform : translateX(0px)
   opacity : 1;
 }
-`
+`;
 
 const TransReckeyframe = keyframes`
 from{
@@ -97,8 +127,7 @@ display : block;
 to{
   display : none;
 }
-`
-
+`;
 
 const ColoredAkeyframe = keyframes`
 from{
@@ -108,39 +137,28 @@ opacity : 0;
 to{
   opacity : 1;
 }
-`
-
-
+`;
 
 //Animation
 
-
 export const TransA = styled.g`
-animation: ${TransReckeyframe} 1s linear ;
-`
+  animation: ${TransReckeyframe} 1s linear;
+`;
 export const TransB = styled.g`
-
-animation: ${TransReckeyframe} 1s linear ;
-`
+  animation: ${TransReckeyframe} 1s linear;
+`;
 export const TransREC = styled.g`
-animation: ${TransReckeyframe} 1s linear ;
-transform-box: fill-box;
-`
-
-
-
+  animation: ${TransReckeyframe} 1s linear;
+  transform-box: fill-box;
+`;
 
 export const ColoredA = styled.g`
-animation: ${ColoredAkeyframe} 800ms linear infinite ;
-`
+  animation: ${ColoredAkeyframe} 800ms linear infinite;
+`;
 export const ColoredB = styled.g`
-animation: ${ColoredAkeyframe} 800ms linear infinite  ;
-`
+  animation: ${ColoredAkeyframe} 800ms linear infinite;
+`;
 export const ColoredREC = styled.g`
-animation: ${ColoredReckeyframe} 800ms linear infinite   ;
-`
-
-
-
-
+  animation: ${ColoredReckeyframe} 800ms linear infinite;
+`;
 

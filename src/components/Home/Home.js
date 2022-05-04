@@ -2,7 +2,8 @@ import React from "react";
 import LeftContainer from "./LeftContainer";
 import MiddleContainer from "./MiddleContainer";
 import RightContainer from "./RightContainer";
-import { HomeContainer, MiddleRightContainer } from "./Homestyling";
+import { HomeContainer, MiddleRightContainer, MiddleOverlay, OverlayPicture } from "./Homestyling";
+import overlayimage from '../../assets/bluelogo.png'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <MiddleRightContainer>
         <MiddleContainer />
         <RightContainer />
+        
       </MiddleRightContainer>
     </HomeContainer>
   );
