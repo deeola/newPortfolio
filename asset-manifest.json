@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/newPortfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/newPortfolio/static/js/main.f20dd345.js",
+    "main.js": "/newPortfolio/static/js/main.cd1778f3.js",
     "static/js/787.35fe7324.chunk.js": "/newPortfolio/static/js/787.35fe7324.chunk.js",
-    "static/media/resume.pdf": "/newPortfolio/static/media/resume.09ddff733e6a31697d51.pdf",
+    "static/media/resume.pdf": "/newPortfolio/static/media/resume.e4627bcce786e32b6023.pdf",
     "static/media/heritage.png": "/newPortfolio/static/media/heritage.38b9a4b9115bef5c0fea.png",
     "static/media/archstudio.png": "/newPortfolio/static/media/archstudio.e46666ef28a4ade94279.png",
     "static/media/sunnyside.png": "/newPortfolio/static/media/sunnyside.d4311b0e4cb197196bd0.png",
@@ -13,11 +13,11 @@
     "index.html": "/newPortfolio/index.html",
     "static/media/ham-open.svg": "/newPortfolio/static/media/ham-open.8d9987d5befa75ec542bb7f6e4a0461e.svg",
     "main.e6c13ad2.css.map": "/newPortfolio/static/css/main.e6c13ad2.css.map",
-    "main.f20dd345.js.map": "/newPortfolio/static/js/main.f20dd345.js.map",
+    "main.cd1778f3.js.map": "/newPortfolio/static/js/main.cd1778f3.js.map",
     "787.35fe7324.chunk.js.map": "/newPortfolio/static/js/787.35fe7324.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.f20dd345.js"
+    "static/js/main.cd1778f3.js"
   ]
 }
