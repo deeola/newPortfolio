@@ -1,7 +1,8 @@
-import React from "react";
+import React,{useEffect, useRef, useContext} from "react";
 import translate from "../../i18nProvider/translate";
 import NavLogo from "../Shared/NavLogo";
 import { SharedLeftContainer, Title } from "../Shared/SharedStyles";
+import gsap from "gsap";
 import {
   Header,
   HeaderSkills,
@@ -9,10 +10,34 @@ import {
   Skills,
   Skill,
 } from "./AboutStyling";
+import PortfolioContext from "../../context/portfolioContext";
 
 const LeftAbout = () => {
+  const portfolioContext = useContext(PortfolioContext);
+  const { hamOpen } = portfolioContext;
+
+  const leftcont = useRef();
+
+
+  useEffect(() => {
+    gsap.from(leftcont.current, {
+      x: -120,
+      opacity: 1,
+      duration: 0.2,
+    });
+
+ 
+  }, []);
+
+  if(hamOpen){
+    gsap.to(leftcont.current, {
+      zIndex: 1,
+      duration :.1,
+      position : 'relative'
+    });
+  }
   return (
-    <SharedLeftContainer>
+    <SharedLeftContainer ref={leftcont}>
       <NavLogo />
       <HeaderSkills>
         <Title>{translate("aboutme")}</Title>

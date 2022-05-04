@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef, useEffect } from "react";
 import {
   NextPrevIcons,
   Icon,
@@ -12,6 +12,7 @@ import {
   TechUsed,
   Visit,
 } from "./ProjectStyling";
+import gsap from "gsap";
 import NavLogo from "../Shared/NavLogo";
 import AllProjects from "./Allprojects";
 import { v4 as uuidv4 } from "uuid";
@@ -28,11 +29,29 @@ library.add(faCaretSquareLeft, faCaretSquareRight);
 
 const LeftProject = () => {
   const portfolioContext = useContext(PortfolioContext);
-  const { currents, locales, setProjectNext, setProjectPrev } =
+  const { currents, locales, setProjectNext, setProjectPrev, hamOpen } =
     portfolioContext;
 
+  const leftcont = useRef();
+
+  useEffect(() => {
+    gsap.from(leftcont.current, {
+      x: -120,
+      opacity: 1,
+      duration: 0.2,
+    });
+  }, []);
+
+  if (hamOpen) {
+    gsap.to(leftcont.current, {
+      zIndex: 1,
+      duration: 0.1,
+      position: "relative",
+    });
+  }
+
   return (
-    <SharedLeftContainer primary>
+    <SharedLeftContainer primary ref={leftcont}>
       <NavLogo />
       <ProjectDetails>
         {AllProjects.map((project, key) =>
@@ -71,5 +90,3 @@ const LeftProject = () => {
 };
 
 export default LeftProject;
-
-

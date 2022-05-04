@@ -27,42 +27,44 @@ const Navbar = () => {
     projectli.current,
   ];
 
-  // useEffect(() => {
-
-  // },[hamOpen])
-
-  console.log(window.innerWidth)
-
-  if(window.innerWidth > 843){
-    All.forEach((item) => {
-      gsap.from(item, {
-        duration: 1.8,
-        y: 100,
-        ease: "power4.out",
-        delay: 0.5,
-        skewY: 7,
-        stagger: {
-          amount: 0.3,
-        },
-      });
+useEffect(() => {
+  All.forEach((item) => {
+    gsap.from(item, {
+      duration: 1.8,
+      y: 100,
+      ease: "power4.out",
+      delay: 0.5,
+      skewY: 7,
+      opacity: 0,
+      stagger: {
+        amount: 0.3,
+      },
     });
-  }
+  });
 
-  if(window.innerWidth > 375 && !(window.innerWidth > 843)){
-    All.forEach((item) => {
-      gsap.from(item, {
-        duration: 1.8,
-        y: -100,
-        ease: "power4.out",
-        delay: 0.5,
-        skewY: 2,
-        position: "relative",
-        stagger: {
-          amount: 0.3,
-        },
-      });
-    });
-  } 
+},[])
+
+  // console.log(window.innerWidth)
+
+  // if(window.innerWidth > 843){
+    
+  // }
+
+  // if(window.innerWidth > 375 && !(window.innerWidth > 843)){
+  //   All.forEach((item) => {
+  //     gsap.from(item, {
+  //       duration: 1.8,
+  //       y: -100,
+  //       ease: "power4.out",
+  //       delay: 0.5,
+  //       skewY: 2,
+  //       position: "relative",
+  //       stagger: {
+  //         amount: 0.3,
+  //       },
+  //     });
+  //   });
+  // } 
 
 
 
