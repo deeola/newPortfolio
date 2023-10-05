@@ -1,8 +1,8 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import portfolioContext from "./portfolioContext";
 import AllProjects from "../components/Project/Allprojects";
 import { LOCALES } from "../i18nProvider";
-import gsap from "gsap";
+
 const PortfolioState = (props) => {
   // Navigation
 

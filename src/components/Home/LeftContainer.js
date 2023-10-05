@@ -9,21 +9,16 @@ import {
   EmptyDiv,
   LanguageDiv,
   Bottom,
-  MyAboutMobile,
   Languages,
-  EmptyDivMobile,
   BottomRightContainer,
   Icon,
   IconLInk,
 } from "./Homestyling";
 
-import flag from "../../assets/icons/usaflag.png";
-import germanflag from "../../assets/icons/germanflag.png";
 import NavLogo from "../Shared/NavLogo";
 import PortfolioContext from "../../context/portfolioContext";
 import { LOCALES } from "../../i18nProvider";
 import translate from "../../i18nProvider/translate";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const LeftContainer = () => {
@@ -75,7 +70,6 @@ const LeftContainer = () => {
        
           </MyAbout>
           <MyAbout>{translate("aboutmobile")}</MyAbout>
-          {/* <EmptyDivMobile /> */}
         </TextContainer>
 
         <LanguageOptions>

@@ -5,18 +5,13 @@ import { gsap } from "gsap";
 
 import {
   BottomContainer,
-  BottomRightContainer,
   ProjectContainer,
   TopContainerMR,
   RightContainerDiv,
-  Icon,
-  EmptyRightDiv,
   EmptyAnimatedDiv,
 } from "./Homestyling";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import translate from "../../i18nProvider/translate";
-import overlayimage from '../../assets/alogo.png';
+
 
 
 const RightContainer = () => {

@@ -7,15 +7,12 @@ import {
   DownloadCV,
   EmptyAnimatedDiv,
   MiddleContainerDiv,
-  MiddleOverlay,
-  OverlayPicture,
   ProjectContainer,
-  TopContainerMR,
-  Group
+  TopContainerMR
 } from "./Homestyling";
 import translate from "../../i18nProvider/translate";
 import resume from "../../assets/resume.pdf";
-import overlayimage from "../../assets/blogo.png";
+
 
 const MiddleContainer = () => {
   //get refs
