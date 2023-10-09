@@ -53,7 +53,7 @@ const LeftProject = () => {
     <SharedLeftContainer primary ref={leftcont}>
       <NavLogo />
       <ProjectDetails>
-        {AllProjects.map((project, key) =>
+        {AllProjects.map((project) =>
           project.key === currents + 1 ? (
             <Procontainer key={uuidv4()}>
               <Title>{project.name}</Title>
